@@ -15,7 +15,8 @@ content =
                     label: "doc.Setup"
                     title: "doc.Setup"
                     type: "imageRight"
-                    path: "/start/TinkerlampPosition.jpg"
+                    #path: "/start/TinkerlampPosition.jpg"
+                    cloudinaryId: "TinkerlampPosition_o0ogsu"
                     caption: "doc.start.TinkerlampPosition"
                 }
                 {
@@ -23,7 +24,8 @@ content =
                     label: "doc.ComputerConnection"
                     title: "doc.ComputerConnection"
                     type: "imageLeft"
-                    path: "/start/UsbConnection.jpg"
+                    #path: "/start/UsbConnection.jpg"
+                    cloudinaryId: "UsbConnection_rl3cdm"
                     caption: "doc.start.UsbConnection"
 
                 }
@@ -32,7 +34,8 @@ content =
                     label: "doc.appUrl"
                     title: "doc.appUrl"
                     type: "image"
-                    path: "/start/homepage.png"
+                    #path: "/start/homepage.png"
+                    cloudinaryId: "homepage_toogus"
                     caption: "doc.start.WebBrowserChoice"
                 }
                 {
@@ -41,7 +44,8 @@ content =
                     title: "doc.AllowCameraUsage"
                     titleInCaption: true
                     type: "image"
-                    path: "/start/enableCamera.png"
+                    #path: "/start/enableCamera.png"
+                    cloudinaryId: "enableCamera_teebgy"
                     caption: "doc.start.EnableCamera"
                 }
                 {
@@ -50,7 +54,8 @@ content =
                     title: "doc.Login"
                     titleInCaption: true
                     type: "image"
-                    path: "/start/login.png"
+                    #path: "/start/login.png"
+                    cloudinaryId: "login_vzi9kd"
                     caption: "doc.start.Login"
                 }
                 {
@@ -58,7 +63,8 @@ content =
                     label: "doc.PositionCamera"
                     title: "doc.PositionCamera"
                     type: "image"
-                    path: "/start/cameraPosition.png"
+                    cloudinaryId: "cameraPosition_jequ4e"
+                    #path: "/start/cameraPosition.png"
                     caption: "doc.start.PositionCamera"
                 }
                 {

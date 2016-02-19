@@ -8,7 +8,13 @@ Template.docNavigation.events
     'click .docNavigationPage': (e,tmpl) ->
         tmpl.data.doc.setPath @path
     'click .docNavigationLeaf': (e, tmpl) ->
-        tmpl.data.doc.setPath @item.path
+        e.preventDefault()
+        e.stopPropagation()
+        target = $('#'+@item.id)
+        $('html body').animate({
+            scrollTop: target.offset().top
+        }, 300)
+        $('.button-collapse').sideNav('hide')
 
 # navigation tree
 # - path
@@ -38,3 +44,5 @@ Template.docNavigationLeaf.helpers
             classes+' active'
         else
             classes
+    targetUrl: ->
+        '#'+@item.id

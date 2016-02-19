@@ -14,3 +14,9 @@ template(name="docCardContent")
     if card.caption
         div.card-content
             {{_ card.caption}}
+
+template(name="docCardDisplayImage")
+    if card.cloudinaryId
+        img(srcset=srcset sizes=sizes)
+    else
+        img.responsive-img(src=card.path)

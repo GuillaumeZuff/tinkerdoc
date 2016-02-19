@@ -6,5 +6,5 @@ template(name="docPage")
                     +docPageCard(card=this)
 
 template(name="docPageCard")
-    div.docCard
+    div.docCard.section.scrollspy(id=card.id)
         +Template.dynamic(dynSettings)

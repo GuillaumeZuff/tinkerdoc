@@ -1,7 +1,7 @@
 template(name="docWidget_image")
     div.card.z-depth-2
         div.card-image
-            img.responsive-img(src=imageUrl)
+            +docCardDisplayImage
             unless card.titleInCaption
                 +docCardTitle
         unless card.titleInCaption
@@ -14,7 +14,7 @@ template(name="docWidget_imageLeft")
         div.row
             div.col.m6.s12
                 div.card-image
-                    img.responsive-img(src=card.path)
+                    +docCardDisplayImage
             div.col.m6.s12
                 +docCardTitleAndContent
 
@@ -25,4 +25,5 @@ template(name="docWidget_imageRight")
                 +docCardTitleAndContent
             div.col.m6.s12
                 div.card-image
-                    img.responsive-img(src=card.path)
+                    +docCardDisplayImage
+
