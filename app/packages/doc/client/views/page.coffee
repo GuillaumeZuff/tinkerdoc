@@ -5,16 +5,12 @@ Template.docPage.helpers
         console.log 'page', page
         page
 
-# part
-Template.docPagePart.created = ->
-    console.log 'part', @data
-
-# content
-# - part
-Template.docPagePartContent.helpers
+# card
+# - card
+Template.docPageCard.helpers
     dynSettings: ->
-        console.log 'template', 'docWidget_'+@type
+        console.log 'template', 'docWidget_'+@card.type
         {
-            template: 'docWidget_'+@type
+            template: 'docWidget_'+@card.type
             data: @
         }

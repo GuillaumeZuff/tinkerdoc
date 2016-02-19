@@ -1,0 +1,8 @@
+{
+    "public": {
+        "cloudinary": {
+            "cloudName": "",
+            "apiKey": ""
+        }
+    }
+}

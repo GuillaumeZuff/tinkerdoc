@@ -10,15 +10,27 @@
         "Calibration": "Calibration",
 
         "Connection": "Connexion",
-
         "ComputerConnection": "Connexion à l'ordinateur",
 
+        "Login": "Login",
+
+        "PositionCamera": "Positionnement de la caméra",
         "Procedure": "Procédure",
         "ProcedureVideo": "Procédure (vidéo)",
 
         "Start": "Démarrage",
-        "StartDone": "Démarrage terminé",
+        "StartDone": "Terminé",
 
-        "TinkerlampSetup": "Tinkerlamp - mise en place"
+        "Setup": "Mise en place",
+
+        "start": {
+            "Done": "Placez une fiche d'activité pédagogique pour commencer à apprendre!",
+            "EnableCamera": "Le navigateur web a besoin de votre autorisation pour utiliser la caméra. Si vous utilisez Google Chrome, cette demande apparaîtra une seule fois.",
+            "Login": "Déplacez la caméra de façon à ce qu'elle voie le tag collé sur le pied de votre Tinkerlamp. Cliquez sur le bouton \"Entrer\" lorsque le tag a été détecté.",
+            "PositionCamera": "Positionnez la caméra de telle sorte que le pied de votre Tinkerlamp soit à peine visible au sommet de l'image.",
+            "TinkerlampPosition": "Placez la Tinkerlamp à côté de votre ordinateur, sur une surface claire (utilisez une grande feuille blanche si la table est foncée).",
+            "UsbConnection": "Connectez la Tinkerlamp à un port USB de votre ordinateur.",
+            "WebBrowserChoice": "Veuillez utilisez une version récente de Firefox ou Google Chrome."
+        }
     }
 }

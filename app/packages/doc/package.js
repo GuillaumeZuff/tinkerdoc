@@ -13,6 +13,7 @@ Package.onUse(function(api) {
       'coffeescript',
       'underscore',
       'templating',
+      'reactive-var',
       'tap:i18n@1.7.0',
       'mquandalle:jade@0.4.8',
       'fourseven:scss@3.4.1',
@@ -25,16 +26,27 @@ Package.onUse(function(api) {
 
   api.addFiles([
       'client/lib/documentation.coffee',
+      'client/lib/cloudinary.coffee',
+      'client/lib/jquery.cloudinary.js',
       'client/style.scss',
+  ], 'client');
+
+  api.addFiles([
       'client/views/index.jade',
       'client/views/index.coffee',
       'client/views/navigation.jade',
       'client/views/navigation.coffee',
       'client/views/page.jade',
       'client/views/page.coffee',
+      'client/views/card.jade',
+      'client/views/card.coffee',
   ], 'client');
 
   api.addFiles([
+      'client/views/widgets/image.jade',
+      'client/views/widgets/image.coffee',
+      'client/views/widgets/message.jade',
+      'client/views/widgets/message.coffee',
       'client/views/widgets/youtube.jade',
       'client/views/widgets/youtube.coffee',
   ], 'client');

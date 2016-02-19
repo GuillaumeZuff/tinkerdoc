@@ -1,3 +1,11 @@
 template(name="docWidget_youtube")
+    {{checkId}}
+    div.card.z-depth-2
+        div.card-image
+            if showPlayer
+                +docYoutubePlayer videoId=card.videoId
+        +docCardTitleAndContent
+
+template(name="docYoutubePlayer")
     div.video-container
         div(id=playerId)

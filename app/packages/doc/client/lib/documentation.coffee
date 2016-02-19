@@ -3,7 +3,7 @@ unless Documentation?
 
 Documentation.doc = ((_options) ->
     options = _.extend {
-        navigationDepth: 3
+        navigationDepth: 2
     }, _options
     content = []
 
@@ -21,15 +21,15 @@ Documentation.doc = ((_options) ->
         getNavigation: ->
             level = 0
             path = ""
-            extractNav = (parts, level, path) ->
-                _.map parts, (part) ->
-                    doc = _.pick part, 'id', 'label'
+            extractNav = (pages, level, path) ->
+                _.map pages, (page) ->
+                    doc = _.pick page, 'id', 'label'
                     doc.path = (
-                        if path then path+'.'+part.id
-                        else part.id
+                        if path then path+'.'+page.id
+                        else page.id
                     )
                     if level < options.navigationDepth
-                        doc.children = extractNav part.children, level+1, doc.path
+                        doc.children = extractNav page.cards, level+1, doc.path
                     return doc
             extractNav content?.pages, 0, ''
     }

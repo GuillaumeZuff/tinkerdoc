@@ -1,0 +1,16 @@
+template(name="docCardTitleAndContent")
+    if displayContent
+        div.card-content
+            if card.title
+                <div class="card-title">{{_ card.title}}</div>
+            if card.caption
+                {{_ card.caption}}
+
+template(name="docCardTitle")
+    if card.title
+        span.card-title {{_ card.title}}
+
+template(name="docCardContent")
+    if card.caption
+        div.card-content
+            {{_ card.caption}}

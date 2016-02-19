@@ -1,14 +1,10 @@
 template(name="docPage")
-    with getPage
-        each children
-            +docPagePart(part=this)
+    div.row
+        div.col.l10.offset-l1.m8.offset-m2.s12
+            with getPage
+                each cards
+                    +docPageCard(card=this)
 
-template(name="docPagePart")
-    div.docPart
-        h4 {{_ part.label}}
-        div.docPartContent
-            +docPagePartContent
-
-template(name="docPagePartContent")
-    each part.content
+template(name="docPageCard")
+    div.docCard
         +Template.dynamic(dynSettings)

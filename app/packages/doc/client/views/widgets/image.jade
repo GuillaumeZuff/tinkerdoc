@@ -1,0 +1,28 @@
+template(name="docWidget_image")
+    div.card.z-depth-2
+        div.card-image
+            img.responsive-img(src=imageUrl)
+            unless card.titleInCaption
+                +docCardTitle
+        unless card.titleInCaption
+            +docCardContent
+        else
+            +docCardTitleAndContent
+
+template(name="docWidget_imageLeft")
+    div.card.z-depth-2
+        div.row
+            div.col.m6.s12
+                div.card-image
+                    img.responsive-img(src=card.path)
+            div.col.m6.s12
+                +docCardTitleAndContent
+
+template(name="docWidget_imageRight")
+    div.card.z-depth-2
+        div.row
+            div.col.m6.s12
+                +docCardTitleAndContent
+            div.col.m6.s12
+                div.card-image
+                    img.responsive-img(src=card.path)

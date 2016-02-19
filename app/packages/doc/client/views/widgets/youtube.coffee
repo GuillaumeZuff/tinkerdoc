@@ -1,13 +1,28 @@
 Template.docWidget_youtube.created = ->
     Lateral.youtube.player.load()
-    @playerId = 'yt-player-'+FlowRouter.getQueryParam 'path'
+    @videoId = @data.card.videoId
+    @showPlayer = new ReactiveVar false
 
-Template.docWidget_youtube.rendered = ->
+Template.docWidget_youtube.helpers
+    checkId: ->
+        tmpl = Template.instance()
+        if @card.videoId isnt tmpl.videoId
+            tmpl.showPlayer.set false
+            tmpl.videoId = @card.videoId
+            Meteor.defer -> tmpl.showPlayer.set true
+        undefined
+    showPlayer: ->
+        Template.instance().showPlayer.get()
+
+# player
+Template.docYoutubePlayer.created = ->
+    @playerId = 'yt-player-'+@data.videoId
+
+Template.docYoutubePlayer.rendered = ->
     tmpl = @
     @autorun ->
         if Lateral.youtube.player.isReady()
-            console.log 'player language', TAPi18n.getLanguage()
-            width = tmpl.$('#'+tmpl.playerId).width()
+            #width = tmpl.$('#'+tmpl.playerId).width()
             player = Lateral.youtube.player.create tmpl.playerId, {
                 #width: width
                 #height: width * 10/16
@@ -21,7 +36,6 @@ Template.docWidget_youtube.rendered = ->
                     showinfo: 0
             }
     
-Template.docWidget_youtube.helpers
+Template.docYoutubePlayer.helpers
     playerId: ->
         Template.instance().playerId
-
