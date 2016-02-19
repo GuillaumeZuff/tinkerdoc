@@ -1,0 +1,8 @@
+.docNavigation {
+    &.root {
+    }
+    & > li {
+        cursor: pointer; 
+        padding: 5px;
+    }
+}

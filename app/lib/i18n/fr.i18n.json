@@ -1,0 +1,24 @@
+{
+    "Doc": "Doc",
+
+    "SiteName": "Tinkerlamp",
+
+    "doc": {
+        "appUrl": "app.tinkerlamp.com",
+        "AllowCameraUsage": "Autorisez l'utilisation de la caméra",
+
+        "Calibration": "Calibration",
+
+        "Connection": "Connexion",
+
+        "ComputerConnection": "Connexion à l'ordinateur",
+
+        "Procedure": "Procédure",
+        "ProcedureVideo": "Procédure (vidéo)",
+
+        "Start": "Démarrage",
+        "StartDone": "Démarrage terminé",
+
+        "TinkerlampSetup": "Tinkerlamp - mise en place"
+    }
+}

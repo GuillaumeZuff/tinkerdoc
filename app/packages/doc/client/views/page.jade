@@ -1,0 +1,14 @@
+template(name="docPage")
+    with getPage
+        each children
+            +docPagePart(part=this)
+
+template(name="docPagePart")
+    div.docPart
+        h4 {{_ part.label}}
+        div.docPartContent
+            +docPagePartContent
+
+template(name="docPagePartContent")
+    each part.content
+        +Template.dynamic(dynSettings)

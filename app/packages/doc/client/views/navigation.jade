@@ -1,0 +1,16 @@
+template(name="docNavigation")
+    +docNavigationTree items=navItems pathId="__root__"
+
+template(name="docNavigationTree")
+    ul.docNavigation.collapsible(id="#{pathId}" data-collapsible="accordion")
+        each items
+            li(class=liClass)
+                div(class=headerClass) {{_ this.label}}
+                if this.children
+                    div.collapsible-body
+                        ul.docNavigationLeaves
+                            each this.children
+                                +docNavigationLeaf(item=this)
+
+template(name="docNavigationLeaf")
+    li(class=liClass) {{_ item.label}}

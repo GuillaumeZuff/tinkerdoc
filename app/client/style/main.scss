@@ -1,0 +1,117 @@
+@import "{lateral:doc}/client/style.scss";
+@import "{poetic:materialize-scss}/sass/components/_color.scss";
+
+// blue grey - light green
+$primary-color-dark:   #455A64;
+$primary-color:        #607D8B;
+$primary-color-light:  #CFD8DC;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #8BC34A;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
+// green - orange
+//$primary-color-dark:   #689F38;
+//$primary-color:        #8BC34A;
+//$primary-color-light:  #DCEDC8;
+//$primary-color-text:   #212121;
+//$accent-color:         #FF5722;
+//$primary-text-color:   #212121;
+//$secondary-text-color: #727272;
+//$divider-color:        #B6B6B6;
+
+// grey - green
+//$primary-color-dark:   #616161;
+//$primary-color:        #9E9E9E;
+//$primary-color-light:  #F5F5F5;
+//$primary-color-text:   #212121;
+//$accent-color:         #8BC34A;
+//$primary-text-color:   #212121;
+//$secondary-text-color: #727272;
+//$divider-color:        #B6B6B6;
+
+// colors - green
+//$primary-color-dark:   #388E3C;
+//$primary-color:        #4CAF50;
+//$primary-color-light:  #C8E6C9;
+//$primary-color-text:   #FFFFFF;
+//$accent-color:         #9E9E9E;
+//$primary-text-color:   #212121;
+//$secondary-text-color: #727272;
+//$divider-color:        #B6B6B6;
+
+// colors - light green
+//$primary-color-dark:   #689F38;
+//$primary-color:        #8BC34A;
+//$primary-color-light:  #DCEDC8;
+//$primary-color-text:   #212121;
+//$accent-color:         #9E9E9E;
+//$primary-text-color:   #212121;
+//$secondary-text-color: #727272;
+//$divider-color:        #B6B6B6;
+
+// colors - teal
+//$primary-color:         #009688 !default;
+//$primary-color-light:   #B2DFDB !default;
+//$primary-color-dark:    #00796B !default;
+//$primary-color-text:    #FFFFFF !default;
+//$accent-color:          #9E9E9E !default;
+//$primary-text-color:    #212121 !default;
+//$secondary-text-color:  #727272 !default;
+//$divider-color:         #B6B6B6 !default;
+
+$secondary-color:       $accent-color;
+$off-black: $primary-text-color;
+
+@import "{poetic:materialize-scss}/sass/materialize.scss";
+
+// sticky footer
+body, #__blaze-root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+// padding for side bar
+header, main, footer {
+    padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+// background color
+body {
+    background-color: color("grey","lighten-2");
+}
+
+// navigation
+ul#slide-out {
+    li {
+        line-height: 32px;
+        .collapsible-header {
+            padding-left: 0px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+    }
+    .docNavigationLeaves {
+        li {
+            padding-left: 30px;
+            font-size: 0.95em;
+            color: $primary-text-color;
+            &.active {
+                background-color: $accent-color;
+                color: $primary-color-text;
+            }
+        }
+    }
+}
