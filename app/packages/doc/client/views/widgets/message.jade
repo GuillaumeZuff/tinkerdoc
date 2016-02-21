@@ -1,7 +1,9 @@
 template(name="docWidget_message")
-    div(class=cardClasses)
-        div.card-content.white-text
-            if card.title
-                div.card-title {{_ card.title}}
-            if card.caption
-                {{_ card.caption}}
+    with getClasses
+        div(class=cardClasses)
+            div(class=contentClasses)
+                if card.title
+                    div.card-title {{_ card.title}}
+                if card.caption
+                    +docMarkdown(text=caption)
+                +docCardLinks

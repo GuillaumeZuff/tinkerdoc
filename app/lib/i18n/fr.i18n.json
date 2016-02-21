@@ -8,9 +8,10 @@
         "AllowCameraUsage": "Autorisez l'utilisation de la caméra",
 
         "Calibration": "Calibration",
-
         "Connection": "Connexion",
         "ComputerConnection": "Connexion à l'ordinateur",
+
+        "Documentation": "Documentation",
 
         "Login": "Login",
 
@@ -18,9 +19,10 @@
         "Procedure": "Procédure",
         "ProcedureVideo": "Procédure (vidéo)",
 
+        "RedGreenCard": "Carte rouge/verte",
+
         "Start": "Démarrage",
         "StartDone": "Terminé",
-
         "Setup": "Mise en place",
 
         "start": {
@@ -31,6 +33,50 @@
             "TinkerlampPosition": "Placez la Tinkerlamp à côté de votre ordinateur, sur une surface claire (utilisez une grande feuille blanche si la table est foncée).",
             "UsbConnection": "Connectez la Tinkerlamp à un port USB de votre ordinateur.",
             "WebBrowserChoice": "Veuillez utilisez une version récente de Firefox ou Google Chrome."
+        },
+        "calibration": {
+            "AlignCalibrationSheet": "Alignez la fiche de calibration avec la croix noire",
+            "Alignment": "Alignement",
+
+            "HideAndRemove": "Terminer",
+            "HideTagAndRemoveSheet": "Cachez un tag avec votre main et retirez la fiche de calibration",
+
+            "Start": "Démarrage",
+            "StartCaption": "Placez la fiche de calibration sur la table."
+        },
+        "activities": {
+            "Activities": "Activités",
+            "RedGreenCard": "Utilisée dans de nombreuses activités, cette carte est utilisée pour activer/désactiver l'affichage de certaines informations et/ou fonctionnalités.\n\nElle permet au formateur de contrôler le déroulement d'une activité, en encourageant par exemple les élèves à chercher une meilleure solution avant d'afficher le résultat calculé par la Tinkerlamp.",
+            
+            "SaveResult": "Sauvegarde",
+            "SaveResultContent": "La possibilité de sauvegarder un résultat (par ex. mise en place d'entrepôt et données de simulation) est en cours d'élaboration.\n\nLes solutions suivantes sont proposées pour l'instant:\n\n- capture d'écran (Windows, Mac) et, si plusieurs Tinkerlamps sont utilisées, partage par email ou service de stockage (par ex. Dropbox)\n- copie des résultats sur papier puis sur le tableau noir/blanc de la classe",
+
+            "ScreenshotWindows": "Capture d'écran sur Windows",
+            "ScreenshotMac": "Capture d'écran sur Mac",
+
+            "Sheets": "Fiches à imprimer",
+            "SheetsContent": "Les activités pédagogiques se présentent sous la forme de fiches de travail (fichier PDF ci-dessous).\n\n**Impression: il est important d'imprimer les fiches à leur taille originale (format A4).** Les imprimantes proposent souvent par défaut une échelle différente (adaptée aux marges de l'imprimante).\n\nPour démarrer une activité, placez simplement une fiche sur la table, sous la Tinkerlamp."
+        },
+        "warehouse": {
+            "DocksAlternative": "Quais - alternative",
+            "DockBadOrientation": "Problème: orientation",
+            "DockBadOrientationContent": "Tag à l'intérieur, flèche proche du mur: pas d'accès, grille de navigation rouge.",
+            "DocksCenter": "Alternative fantaisiste: quais au centre",
+            "DocksIssues": "Quais - problèmes",
+            "DockOutOfWarehouse": "Quai d'arrivage hors limites",
+            "DocksOk": "Quais",
+            "DocksOkContent": "Position des quais\n\n- A l'intérieur de l'entrepôt (ligne noire épaisse)\n- Tags près du bord, flèche à l'intérieur\n- Type de quai: **arrivage** (flèche pointe vers l'intérieur) et **expédition** (flèche pointe vers l'extérieur)\n- Accès: utilisés par les chariots élévateurs pour déposer/prendre des palettes",
+
+            "Offices": "Bureaux et locaux annexes",
+            "OfficesContent": "Très utiles pour compliquer le travail de mise-en-place, notamment s'ils ne sont pas placés contre un mur mais à l'intérieur de l'entrepôt:\n\n- Bureau administratif et local de pause, avec point d'accès (sera utilisé dans des activités pédagogiques en développement)\n- Local annexe (wc, local technique, escaliers, ...)",
+
+            "Start": "Placez la fiche d'activité **Mise en place d'entrepôt** sur la table.\n\nUn rectangle (murs de l'entrepôt) et une grille (déplacement des chariots élévateurs) s'affichent.",
+            "Shelves": "Étagères / rayonnages",
+            "ShelvesContent": "Les carrés bleux indiques les points d'accès pour les chariots élévateurs. Le dessus de l'étagère indique l'accessibilité:\n\n- Flèche verte: côté accessible\n- Flèche rouge: côté inaccessible\n- Rectangle vert: au moins un côté accessible\n- Rectangle rouge: stockage inutilisable",
+            "ShelvesInaccessible": "Etagère inaccessible",
+            "ShelvesSideBySide": "Etagères côte-à-côte",
+            "ShelvesSideBySideContent": "Chaque étagère est accessible depuis l'extérieur. Les accès intérieurs ne sont pas utilisables (triangles rouges).",
+            "WarehouseLayout": "Entrepôt"
         }
     }
 }

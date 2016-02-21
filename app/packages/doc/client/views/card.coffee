@@ -1,9 +1,17 @@
+# title and content
 Template.docCardTitleAndContent.helpers
     displayContent: ->
         _.some [
             @card.title
             @card.caption
         ]
+    caption: ->
+        TAPi18n.__ @card.caption
+
+# content
+Template.docCardContent.helpers
+    caption: ->
+        TAPi18n.__ @card.caption
 
 Template.docCardDisplayImage.helpers
     srcset: ->
@@ -17,3 +25,12 @@ Template.docCardDisplayImage.helpers
         src.join(',')
     sizes: ->
         "(min-width: 640px) 50vw, 100vw"
+
+# links
+Template.docCardLinks.helpers
+    iconClasses: ->
+        switch @type
+            when 'file'
+                'fa fa-fw fa-download'
+            else
+                'fa fa-fw fa-globe'

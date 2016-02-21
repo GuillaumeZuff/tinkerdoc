@@ -4,7 +4,7 @@ template(name="docCardTitleAndContent")
             if card.title
                 <div class="card-title">{{_ card.title}}</div>
             if card.caption
-                {{_ card.caption}}
+                +docMarkdown(text=caption)
 
 template(name="docCardTitle")
     if card.title
@@ -13,10 +13,19 @@ template(name="docCardTitle")
 template(name="docCardContent")
     if card.caption
         div.card-content
-            {{_ card.caption}}
+            +docMarkdown(text=caption)
 
 template(name="docCardDisplayImage")
     if card.cloudinaryId
         img(srcset=srcset sizes=sizes)
     else
         img.responsive-img(src=card.path)
+
+template(name="docCardLinks")
+    if card.links
+        ul.card-links
+            each card.links
+                li.link
+                    a(href="#{this.target}" target="_blank")
+                        i(class=iconClasses)
+                        | {{_ this.label}}

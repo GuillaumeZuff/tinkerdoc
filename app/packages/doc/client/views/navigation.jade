@@ -13,5 +13,6 @@ template(name="docNavigationTree")
                                 +docNavigationLeaf(item=this)
 
 template(name="docNavigationLeaf")
-    li(class=liClass) {{_ item.label}}
-        //a(href=targetUrl) {{_ item.label}}
+    // leaves without label are not displayed
+    if item.label
+        li(class=liClass) {{_ item.label}}

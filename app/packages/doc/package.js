@@ -14,22 +14,29 @@ Package.onUse(function(api) {
       'underscore',
       'templating',
       'reactive-var',
+      'markdown',
       'tap:i18n@1.7.0',
       'mquandalle:jade@0.4.8',
       'fourseven:scss@3.4.1',
       'kadira:flow-router@2.10.1',
+      'fortawesome:fontawesome@4.5.0',
   ]);
 
   api.imply([
+      'markdown',
       'tap:i18n',
+      'fortawesome:fontawesome',
   ]);
 
   api.addFiles([
       'client/lib/documentation.coffee',
       'client/lib/cloudinary.coffee',
       'client/lib/jquery.cloudinary.js',
-      'client/style.scss',
   ], 'client');
+
+  api.addFiles([
+      'client/style.scss',
+  ], 'client', {isImport:true});
 
   api.addFiles([
       'client/views/index.jade',
@@ -40,6 +47,7 @@ Package.onUse(function(api) {
       'client/views/page.coffee',
       'client/views/card.jade',
       'client/views/card.coffee',
+      'client/views/markdown.html',
   ], 'client');
 
   api.addFiles([

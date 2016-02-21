@@ -8,5 +8,37 @@
 }
 
 .docCard {
+    .card {
+        .card-content {
+            p:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            p {
+                strong {
+                    font-weight: 500;
+                    color: $primary-color;
+                }
+            }
+            ul {
+                li {
+                    list-style-type: circle;
+                    padding-left: 10px;
+                    margin-left: 40px;
+                }
+                li.link {
+                    list-style-type: none;
+                    padding-left: inherit;
+                    margin-left: inherit;
+                }
+            }
+        }
+        .card-image {
+        }
+    }
     //margin-bottom: 2rem;
+}
+.card-image {
+    .card-title {
+        background-color: rgba(0,0,0,0.4);
+    }
 }
