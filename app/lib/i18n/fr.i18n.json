@@ -21,6 +21,8 @@
 
         "RedGreenCard": "Carte rouge/verte",
 
+        "Scenarios": "Scénarios",
+        "ScenariosContent": "Cliquez sur un nom pour démarrer le scénario correspondant.\n\nChaque scénario est décrit plus en détail dans les pages suivantes.\n\nEtoile: scénarios personnalisés (à venir).",
         "Start": "Démarrage",
         "StartDone": "Terminé",
         "Setup": "Mise en place",
@@ -58,6 +60,8 @@
             "SheetsContent": "Les activités pédagogiques se présentent sous la forme de fiches de travail (fichier PDF ci-dessous).\n\n**Impression: il est important d'imprimer les fiches à leur taille originale (format A4).** Les imprimantes proposent souvent par défaut une échelle différente (adaptée aux marges de l'imprimante).\n\nPour démarrer une activité, placez simplement une fiche sur la table, sous la Tinkerlamp."
         },
         "warehouse": {
+            "ControlPanel": "Panneau de contrôle",
+            "ControlPanelContent": "Scénarios, plan de l'entrepôt, contrôle de la simulation, ...",
             "DocksAlternative": "Quais - alternative",
             "DockBadOrientation": "Problème: orientation",
             "DockBadOrientationContent": "Tag à l'intérieur, flèche proche du mur: pas d'accès, grille de navigation rouge.",
@@ -66,6 +70,8 @@
             "DockOutOfWarehouse": "Quai d'arrivage hors limites",
             "DocksOk": "Quais",
             "DocksOkContent": "Position des quais\n\n- A l'intérieur de l'entrepôt (ligne noire épaisse)\n- Tags près du bord, flèche à l'intérieur\n- Type de quai: **arrivage** (flèche pointe vers l'intérieur) et **expédition** (flèche pointe vers l'extérieur)\n- Accès: utilisés par les chariots élévateurs pour déposer/prendre des palettes",
+            "Layout": "Plan de l'entrepôt",
+            "LayoutContent": "Montre en temps réel le plan de l'entrepôt.",
 
             "Offices": "Bureaux et locaux annexes",
             "OfficesContent": "Très utiles pour compliquer le travail de mise-en-place, notamment s'ils ne sont pas placés contre un mur mais à l'intérieur de l'entrepôt:\n\n- Bureau administratif et local de pause, avec point d'accès (sera utilisé dans des activités pédagogiques en développement)\n- Local annexe (wc, local technique, escaliers, ...)",
@@ -76,6 +82,8 @@
             "ShelvesInaccessible": "Etagère inaccessible",
             "ShelvesSideBySide": "Etagères côte-à-côte",
             "ShelvesSideBySideContent": "Chaque étagère est accessible depuis l'extérieur. Les accès intérieurs ne sont pas utilisables (triangles rouges).",
+            "Simulation": "Simulation",
+            "SimulationContent": "Contrôle de la simulation et affichage des statistiques.",
             "WarehouseLayout": "Entrepôt"
         }
     }

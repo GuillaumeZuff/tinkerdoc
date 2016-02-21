@@ -236,6 +236,38 @@ content =
                     cloudinaryId: "warehouseOffices_fmmbih"
                     caption: "doc.warehouse.OfficesContent"
                 }
+                {
+                    id: "controlPanel"
+                    label: "doc.warehouse.ControlPanel"
+                    title: "doc.warehouse.ControlPanel"
+                    type: "image"
+                    cloudinaryId: "warehouseControlPanel_navwsi"
+                    caption: "doc.warehouse.ControlPanelContent"
+                }
+                {
+                    id: "scenarios"
+                    label: "doc.Scenarios"
+                    title: "doc.Scenarios"
+                    type: "image"
+                    cloudinaryId: "warehouseScenarios_har9jq"
+                    caption: "doc.ScenariosContent"
+                }
+                {
+                    id: "layout"
+                    label: "doc.warehouse.Layout"
+                    title: "doc.warehouse.Layout"
+                    type: "image"
+                    cloudinaryId: "warehouseLayout_voeoiw"
+                    caption: "doc.warehouse.LayoutContent"
+                }
+                {
+                    id: "simulation"
+                    label: "doc.warehouse.Simulation"
+                    title: "doc.warehouse.Simulation"
+                    type: "image"
+                    cloudinaryId: "warehouseSimulation_jfujsg"
+                    caption: "doc.warehouse.SimulationContent"
+                }
             ]
         }
     ]
