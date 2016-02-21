@@ -7,6 +7,7 @@ Template.docNavigation.helpers
 Template.docNavigation.events
     'click .docNavigationPage': (e,tmpl) ->
         tmpl.data.doc.setPath @path
+        $('html, body').scrollTop(0)
     'click .docNavigationLeaf': (e, tmpl) ->
         e.preventDefault()
         e.stopPropagation()
