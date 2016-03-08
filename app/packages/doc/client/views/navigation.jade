@@ -1,18 +1,16 @@
 template(name="docNavigation")
-    +docNavigationTree items=navItems pathId="__root__"
+    ul.docNavigation.collapsible(id="#nav_{this.path}" data-collapsible="accordion")
+        each navItems
+            +docNavigationTree item=this isRoot=true level=1
 
 template(name="docNavigationTree")
-    ul.docNavigation.collapsible(id="#{pathId}" data-collapsible="accordion")
-        each items
-            li(class=liClass)
-                div(class=headerClass) {{_ this.label}}
-                if this.children
-                    div.collapsible-body
-                        ul.docNavigationLeaves.section.table-of-contents
-                            each this.children
-                                +docNavigationLeaf(item=this)
-
-template(name="docNavigationLeaf")
-    // leaves without label are not displayed
     if item.label
-        li(class=liClass) {{_ item.label}}
+        li(class=liClass)
+            if item.children
+                div(class=headerClass) {{_ item.label}}
+                div.collapsible-body.navigationBlock
+                    ul.docNavigation.collapsible(id="nav_#{item.path}" data-collapsible="accordion")
+                        each item.children
+                            +docNavigationTree item=this level=nextLevel
+            else
+                | {{_ item.label}}

@@ -39,8 +39,6 @@ Package.onUse(function(api) {
   ], 'client', {isImport:true});
 
   api.addFiles([
-      'client/views/index.jade',
-      'client/views/index.coffee',
       'client/views/navigation.jade',
       'client/views/navigation.coffee',
       'client/views/page.jade',

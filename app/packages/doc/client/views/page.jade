@@ -3,7 +3,18 @@ template(name="docPage")
         div.col.l8.offset-l2.m8.offset-m2.s12
             with getPage
                 each cards
-                    +docPageCard(card=this)
+                    if isSection
+                        +docPageSection(section=this)
+                    else
+                        +docPageCard(card=this)
+
+template(name="docPageSection")
+    div.docSection.section.scrollspy(id=section.id)
+        if section.title
+            h3
+                | {{_ section.title}}
+        each section.cards
+            +docPageCard(card=this)
 
 template(name="docPageCard")
     div.docCard.section.scrollspy(id=card.id)

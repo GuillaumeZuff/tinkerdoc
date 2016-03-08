@@ -1,13 +1,28 @@
 # navigation
 # - doc
+Template.docNavigation.rendered = ->
+    $('*[data-collapsible="accordion"]').collapsible {
+        accordion: true
+    }
+
 Template.docNavigation.helpers
     navItems: ->
          @doc.getNavigation()
 
 Template.docNavigation.events
     'click .docNavigationPage': (e,tmpl) ->
-        tmpl.data.doc.setPath @path
-        $('html, body').scrollTop(0)
+        console.log 'setting path', @item
+        tmpl.data.doc.setPath @item.path
+        target = $('#'+@item.id)
+        if @item.type is 'section'
+        #if target? and not _.isEmpty(@item.children)
+            console.log 'scroll to', target.offset()?.top, target
+            $('html body').animate({
+                scrollTop: target.offset()?.top
+            }, 300)
+        else
+            console.log 'scroll to top'
+            $('html, body').scrollTop(0)
     'click .docNavigationLeaf': (e, tmpl) ->
         e.preventDefault()
         e.stopPropagation()
@@ -18,32 +33,26 @@ Template.docNavigation.events
         $('.button-collapse').sideNav('hide')
 
 # navigation tree
-# - path
-Template.docNavigationTree.rendered = ->
-    $('#'+@data.pathId).collapsible({
-        accordion: true
-    })
-
+# - item
+# - level
 Template.docNavigationTree.helpers
     liClass: ->
+        classes =
+            if _.isEmpty @item.children then 'docNavigationLeaf'
+            else 'docNavigationSection'
         currentPath = Documentation.doc.getCurrentPath()
+        classes += ' level'+@level
         if currentPath and currentPath.startsWith @path
-            'active'
+            classes + ' active'
+        else
+            classes
     headerClass: ->
         classes = 'collapsible-header docNavigationPage'
+        #classes += ' level'+@level
         currentPath = Documentation.doc.getCurrentPath()
         if currentPath and currentPath.startsWith @path
             classes+' active'
         else
             classes
-
-# leaf
-Template.docNavigationLeaf.helpers
-    liClass: ->
-        classes = 'docNavigationLeaf'
-        if @item.path is Documentation.doc.getCurrentPath()
-            classes+' active'
-        else
-            classes
-    targetUrl: ->
-        '#'+@item.id
+    nextLevel: (level) ->
+        Template.instance().data.level + 1

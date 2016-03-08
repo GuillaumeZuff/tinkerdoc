@@ -1,3 +1,69 @@
+content2 =
+    pages: [
+        {
+            id: "page1"
+            label: "Page1"
+            cards: [
+                {
+                    id: "section11"
+                    label: "Section 1.1"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "card111"
+                            label: "Card 1.1.1"
+                            type: "text"
+                        }
+                        {
+                            id: "card112"
+                            label: "Card 1.1.2"
+                            type: "text"
+                        }
+                    ]
+                }
+                {
+                    id: "section12"
+                    label: "Section 1.2"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "card121"
+                            label: "Card 1.2.1"
+                            type: "text"
+                        }
+                        {
+                            id: "card122"
+                            label: "Card 1.2.2"
+                            type: "text"
+                        }
+                    ]
+                }
+            ]
+        }
+        {
+            id: "page2"
+            label: "Page2"
+            cards: [
+                {
+                    id: "section21"
+                    label: "Section 2.1"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "card211"
+                            label: "Card 2.1.1"
+                            type: "text"
+                        }
+                        {
+                            id: "card212"
+                            label: "Card 2.1.2"
+                            type: "text"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 content =
     pages: [
         {
@@ -63,7 +129,7 @@ content =
                 }
                 {
                     id: "done"
-                    label: "doc.StartDone"
+                    #label: "doc.StartDone"
                     title: "doc.StartDone"
                     type: "message"
                     messageType: "success"
@@ -82,7 +148,7 @@ content =
                     videoId: "kXWTdzxg7Tk"
                 }
                 {
-                    id: "start"
+                    id: "startCalibration"
                     label: "doc.calibration.Start"
                     title: "doc.calibration.Start"
                     type: "image"
@@ -173,60 +239,76 @@ content =
                     caption: "doc.warehouse.Start"
                 }
                 {
-                    id: "docksOk"
-                    label: "doc.warehouse.DocksOk"
-                    title: "doc.warehouse.DocksOk"
-                    type: "image"
-                    cloudinaryId: "warehouseDocksOk_v75wqh"
-                    caption: "doc.warehouse.DocksOkContent"
-                }
-                {
-                    id: "docksAlternative"
-                    title: "doc.warehouse.DocksAlternative"
-                    type: "image"
-                    cloudinaryId: "warehouseDocksAlternative_z3s8hn"
-                }
-                {
-                    id: "docksCenter"
-                    title: "doc.warehouse.DocksCenter"
-                    type: "image"
-                    cloudinaryId: "warehouseDocksAlternativeCenter_dxmjbf"
+                    id: "warehouse_docks"
+                    label: "doc.warehouse.Docks"
+                    title: "doc.warehouse.Docks"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "docksOk"
+                            label: "doc.warehouse.DocksPosition"
+                            title: "doc.warehouse.DocksPosition"
+                            type: "image"
+                            cloudinaryId: "warehouseDocksOk_v75wqh"
+                            caption: "doc.warehouse.DocksOkContent"
+                        }
+                        {
+                            id: "docksAlternative"
+                            title: "doc.warehouse.DocksAlternative"
+                            type: "image"
+                            cloudinaryId: "warehouseDocksAlternative_z3s8hn"
+                        }
+                        {
+                            id: "docksCenter"
+                            title: "doc.warehouse.DocksCenter"
+                            type: "image"
+                            cloudinaryId: "warehouseDocksAlternativeCenter_dxmjbf"
 
+                        }
+                        {
+                            id: "docksOutOfWarehouse"
+                            label: "doc.warehouse.DocksIssues"
+                            title: "doc.warehouse.DockOutOfWarehouse"
+                            type: "image"
+                            cloudinaryId: "warehouseDockOutside_tzcoa3"
+                        }
+                        {
+                            id: "docksOrientation"
+                            title: "doc.warehouse.DockBadOrientation"
+                            type: "image"
+                            cloudinaryId: "warehouseDockOrientation_yyricj"
+                            caption: "doc.warehouse.DockBadOrientationContent"
+                        }
+                    ]
                 }
                 {
-                    id: "docksOutOfWarehouse"
-                    label: "doc.warehouse.DocksIssues"
-                    title: "doc.warehouse.DockOutOfWarehouse"
-                    type: "image"
-                    cloudinaryId: "warehouseDockOutside_tzcoa3"
-                }
-                {
-                    id: "docksOrientation"
-                    title: "doc.warehouse.DockBadOrientation"
-                    type: "image"
-                    cloudinaryId: "warehouseDockOrientation_yyricj"
-                    caption: "doc.warehouse.DockBadOrientationContent"
-                }
-                {
-                    id: "shelves"
+                    id: "warehouse_shelves"
                     label: "doc.warehouse.Shelves"
                     title: "doc.warehouse.Shelves"
-                    type: "image"
-                    cloudinaryId: "warehouseShelves_khzqkz"
-                    caption: "doc.warehouse.ShelvesContent"
-                }
-                {
-                    id: "shelvesSideBySide"
-                    title: "doc.warehouse.ShelvesSideBySide"
-                    type: "imageRight"
-                    cloudinaryId: "warehouseShelvesSideBySide_t0dh6z"
-                    caption: "doc.warehouse.ShelvesSideBySideContent"
-                }
-                {
-                    id: "shelvesInaccessible"
-                    title: "doc.warehouse.ShelvesInaccessible"
-                    type: "imageRight"
-                    cloudinaryId: "warehouseShelvesNotAccessible_ipj0nl"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "shelvesAccessibility"
+                            label: "doc.warehouse.ShelvesAccessibility"
+                            title: "doc.warehouse.ShelvesAccessibility"
+                            type: "image"
+                            cloudinaryId: "warehouseShelves_khzqkz"
+                            caption: "doc.warehouse.ShelvesContent"
+                        }
+                        {
+                            id: "shelvesSideBySide"
+                            title: "doc.warehouse.ShelvesSideBySide"
+                            type: "image"
+                            cloudinaryId: "warehouseShelvesSideBySide_t0dh6z"
+                            caption: "doc.warehouse.ShelvesSideBySideContent"
+                        }
+                        {
+                            id: "shelvesInaccessible"
+                            title: "doc.warehouse.ShelvesInaccessible"
+                            type: "image"
+                            cloudinaryId: "warehouseShelvesNotAccessible_ipj0nl"
+                        }
+                    ]
                 }
                 {
                     id: "offices"
@@ -237,41 +319,66 @@ content =
                     caption: "doc.warehouse.OfficesContent"
                 }
                 {
-                    id: "controlPanel"
-                    label: "doc.warehouse.ControlPanel"
-                    title: "doc.warehouse.ControlPanel"
-                    type: "image"
-                    cloudinaryId: "warehouseControlPanel_navwsi"
-                    caption: "doc.warehouse.ControlPanelContent"
+                    id: "warehouse_controlPanel"
+                    label: "doc.ControlPanel"
+                    title: "doc.ControlPanel"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "warehouse_controlPanelContent"
+                            label: "doc.ControlPanelContent"
+                            title: "doc.ControlPanelContent"
+                            type: "image"
+                            cloudinaryId: "warehouseControlPanel_navwsi"
+                            caption: "doc.warehouse.ControlPanelContent"
+                        }
+                        {
+                            id: "scenarios"
+                            label: "doc.Scenarios"
+                            title: "doc.Scenarios"
+                            type: "image"
+                            cloudinaryId: "warehouseScenarios_har9jq"
+                            caption: "doc.ScenariosContent"
+                        }
+                        {
+                            id: "layout"
+                            label: "doc.warehouse.Layout"
+                            title: "doc.warehouse.Layout"
+                            type: "image"
+                            cloudinaryId: "warehouseLayout_voeoiw"
+                            caption: "doc.warehouse.LayoutContent"
+                        }
+                        {
+                            id: "simulation"
+                            label: "doc.warehouse.Simulation"
+                            title: "doc.warehouse.Simulation"
+                            type: "image"
+                            cloudinaryId: "warehouseSimulation_jfujsg"
+                            caption: "doc.warehouse.SimulationContent"
+                        }
+                    ]
                 }
                 {
-                    id: "scenarios"
-                    label: "doc.Scenarios"
-                    title: "doc.Scenarios"
-                    type: "image"
-                    cloudinaryId: "warehouseScenarios_har9jq"
-                    caption: "doc.ScenariosContent"
-                }
-                {
-                    id: "layout"
-                    label: "doc.warehouse.Layout"
-                    title: "doc.warehouse.Layout"
-                    type: "image"
-                    cloudinaryId: "warehouseLayout_voeoiw"
-                    caption: "doc.warehouse.LayoutContent"
-                }
-                {
-                    id: "simulation"
-                    label: "doc.warehouse.Simulation"
-                    title: "doc.warehouse.Simulation"
-                    type: "image"
-                    cloudinaryId: "warehouseSimulation_jfujsg"
-                    caption: "doc.warehouse.SimulationContent"
+                    id: 'scenarios'
+                    label: 'doc.warehouse.WarehouseScenarios'
+                    title: 'doc.warehouse.WarehouseScenarios'
+                    type: 'subpage'
+                    cards: [
+                        {
+                            id: "layout"
+                            label: "doc.warehouse.Layout"
+                            title: "doc.warehouse.Layout"
+                            type: "image"
+                            cloudinaryId: "warehouseLayout_voeoiw"
+                            caption: "doc.warehouse.LayoutContent"
+                        }
+                    ]
                 }
             ]
         }
     ]
 
+
 Documentation.doc.setContent content, {
-    navigationDepth: 2
+    navigationDepth: 3
 }

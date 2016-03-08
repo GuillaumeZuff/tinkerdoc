@@ -10,6 +10,8 @@
         "Calibration": "Calibration",
         "Connection": "Connexion",
         "ComputerConnection": "Connexion à l'ordinateur",
+        "ControlPanel": "Panneau de contrôle",
+        "ControlPanelContent": "Éléments",
 
         "Documentation": "Documentation",
 
@@ -60,16 +62,17 @@
             "SheetsContent": "Les activités pédagogiques se présentent sous la forme de fiches de travail (fichier PDF ci-dessous).\n\n**Impression: il est important d'imprimer les fiches à leur taille originale (format A4).** Les imprimantes proposent souvent par défaut une échelle différente (adaptée aux marges de l'imprimante).\n\nPour démarrer une activité, placez simplement une fiche sur la table, sous la Tinkerlamp."
         },
         "warehouse": {
-            "ControlPanel": "Panneau de contrôle",
             "ControlPanelContent": "Scénarios, plan de l'entrepôt, contrôle de la simulation, ...",
+            "Docks": "Quais",
             "DocksAlternative": "Quais - alternative",
             "DockBadOrientation": "Problème: orientation",
             "DockBadOrientationContent": "Tag à l'intérieur, flèche proche du mur: pas d'accès, grille de navigation rouge.",
             "DocksCenter": "Alternative fantaisiste: quais au centre",
-            "DocksIssues": "Quais - problèmes",
+            "DocksIssues": "Problèmes",
             "DockOutOfWarehouse": "Quai d'arrivage hors limites",
             "DocksOk": "Quais",
             "DocksOkContent": "Position des quais\n\n- A l'intérieur de l'entrepôt (ligne noire épaisse)\n- Tags près du bord, flèche à l'intérieur\n- Type de quai: **arrivage** (flèche pointe vers l'intérieur) et **expédition** (flèche pointe vers l'extérieur)\n- Accès: utilisés par les chariots élévateurs pour déposer/prendre des palettes",
+            "DocksPosition": "Position des quais",
             "Layout": "Plan de l'entrepôt",
             "LayoutContent": "Montre en temps réel le plan de l'entrepôt.",
 
@@ -78,9 +81,10 @@
 
             "Start": "Placez la fiche d'activité **Mise en place d'entrepôt** sur la table.\n\nUn rectangle (murs de l'entrepôt) et une grille (déplacement des chariots élévateurs) s'affichent.",
             "Shelves": "Étagères / rayonnages",
+            "ShelvesAccessibility": "Étagère accessible",
             "ShelvesContent": "Les carrés bleux indiques les points d'accès pour les chariots élévateurs. Le dessus de l'étagère indique l'accessibilité:\n\n- Flèche verte: côté accessible\n- Flèche rouge: côté inaccessible\n- Rectangle vert: au moins un côté accessible\n- Rectangle rouge: stockage inutilisable",
-            "ShelvesInaccessible": "Etagère inaccessible",
-            "ShelvesSideBySide": "Etagères côte-à-côte",
+            "ShelvesInaccessible": "Inaccessible",
+            "ShelvesSideBySide": "Côte-à-côte",
             "ShelvesSideBySideContent": "Chaque étagère est accessible depuis l'extérieur. Les accès intérieurs ne sont pas utilisables (triangles rouges).",
             "Simulation": "Simulation",
             "SimulationContent": "Contrôle de la simulation et affichage des statistiques.",

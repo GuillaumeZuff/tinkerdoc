@@ -2,6 +2,8 @@
 Template.docPage.helpers
     getPage: ->
         Documentation.doc.getCurrentPage()
+    isSection: ->
+        @type is 'section'
 
 # card
 # - card
