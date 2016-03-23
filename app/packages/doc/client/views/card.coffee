@@ -34,3 +34,5 @@ Template.docCardLinks.helpers
                 'fa fa-fw fa-download'
             else
                 'fa fa-fw fa-globe'
+    targetUrl: ->
+        TAPi18n.__ @target

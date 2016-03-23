@@ -1,4 +1,6 @@
 template(name="docNavigation")
+    if isChapter
+        <li><a href="{{backUrl}}"><i class="fa fa-arrow-left"></i> {{_ 'doc.Back'}}</a></li>
     ul.docNavigation.collapsible(id="#nav_{this.path}" data-collapsible="accordion")
         each navItems
             +docNavigationTree item=this isRoot=true level=1

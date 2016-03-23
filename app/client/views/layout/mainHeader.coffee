@@ -17,4 +17,6 @@ Template.mainHeader.helpers
 Template.mainHeader.events
     'click .setLang': (e,tmpl) ->
         e.preventDefault()
-        TAPi18n.setLanguage($(e.target).data('lang'))
+        lang = $(e.target).data('lang')
+        TAPi18n.setLanguage(lang)
+        FlowRouter.setQueryParams({lang:lang})

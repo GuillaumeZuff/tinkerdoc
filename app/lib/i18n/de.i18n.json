@@ -1,0 +1,168 @@
+{
+    "Doc": "Doc",
+
+    "SiteName": "Tinkerlamp",
+
+    "doc": {
+        "appUrl": "app.tinkerlamp.de",
+        "AllowCameraUsage": "Kameranutzung erlauben",
+
+        "Back": "Zurück",
+
+        "Calibration": "Kalibration",
+        "Connection": "Verbindung mit dem Computer",
+        "ComputerConnection": "Verbindung",
+        "Control": "Kontrolle",
+        "ControlPanel": "Kontrollfeld",
+        "ControlPanelContent": "Elemente",
+
+        "Discussion": "Diskussion",
+        "Documentation": "Dokumentation",
+
+        "Goals": "Ziele",
+
+        "Interface": "Benutzeroberfläche",
+
+        "Login": "Login",
+
+        "PositionCamera": "Kamerapositionierung",
+        "Procedure": "Vorgehen",
+        "ProcedureAlternative": "Vorgehen (Alternative)",
+        "ProcedureVideo": "Vorgehen (Video)",
+
+        "RedGreenCard": "Rote / Grüne Aktivierungskarte",
+
+        "Scenarios": "Szenarien",
+        "ScenariosContent": "Klicken Sie auf das Szenario, um es zu starten.\n\nAuf den nachfolgenden Seiten wird jedes Szenario beschrieben.\n\nStern: personlisierte Szenarien (in Entwicklung) ",
+        "Start": "Startphase",
+        "StartDone": "Fertig",
+        "Setup": "Aufbau",
+
+        "start": {
+            "Done": "Legen Sie das Blatt einer Lernaktivität auf, um mit dem Lernen zu beginnen!",
+            "EnableCamera": "Der Web-Browser kann nur mit Ihrer Erlaubnis auf die Kamera zugreifen. Wenn Sie Google Chrome benutzen, erscheint die Aufforderung, Erlaubnis zu erteilen, nur einmal.",
+            "Login": "Bringen Sie die Kamera in Position, so dass der Aufkleber mit dem Kode auf dem Fuss der Tinkerlamp für die Kamera sichtbar ist.\n\nKlicken Sie auf \"Enter\", sobald der Kode erkannt wurde.",
+            "PositionCamera": "Richten Sie die Kamera so aus, dass der Fuss der Tinkerlamp gerade noch im oberen Teil des Bildes sichtbar ist.",
+            "TinkerlampPosition": "Stellen Sie die Tinkerlamp neben Ihren Computer, über eine helle Oberfläche (benutzen Sie ein grosses weisses Blatt, falls der Tisch dunkel ist).",
+            "UsbConnection": "Verbinden Sie die Tinkerlamp über einen USB-Anschluss mit Ihrem Computer.",
+            "WebBrowserChoice": "Benutzen Sie Google Chrome oder Firefox."
+        },
+        "calibration": {
+            "AlignCalibrationSheet": "Richten Sie das Blatt am schwarzen Kreuz aus.",
+            "Alignment": "Ausrichtung",
+
+            "HideAndRemove": "Abschliessen",
+            "HideTagAndRemoveSheet": "Verdecken Sie einen Kode mit der Hand und entfernen Sie das Blatt.",
+
+            "Start": "Start",
+            "StartCaption": "Legen Sie das Blatt zur Kalibration auf den Tisch."
+        },
+        "activities": {
+            "Activities": "Lernaktivitäten",
+            "ActivitySheets": "Lernaktivitäten (Arbeitsblätter)",
+            "downloadLink": "/tinkerlamp-de.pdf",
+            "RedGreenCard": "Diese Karte wird in vielen Lernaktivitäten benutzt, um das Anzeigen bestimmter Informationen und/oder Funktionalitäten an- bzw. auszuschalten.\n\nSie erlaubt es der Lehrperson, den Ablauf einer Lernaktivität zu kontrollieren. Beispielsweise kann die Lehrperson die Lernenden ermuntern, eine bessere Lösung zu suchen, bevor das von der Tinkerlamp errechnete Ergebnis angezeigt wird.",
+            
+            "SaveResult": "Ergebnisse speichern",
+            "SaveResultContent": "Die Möglichkeit, Ergebnisse (z.B. Lageraufbau, Simulationsdaten) zu speichern, wird derzeit entwickelt.\n\nVorerst können folgende Lösungen vorgeschlagen werden:\n\n- Bildschirmfoto ([Windows](http://windows.microsoft.com/de-de/windows/take-screen-capture-print-screen#take-screen-capture-print-screen=windows-8), [Mac](https://support.apple.com/de-de/HT201361)), falls mehrere Tinkerlamps genutzt werden, Bildschirmfotos per E-Mail oder Online-Speicher (z.B. Dropbox) mit anderen teilen\n- Ergebnisse auf Papier schreiben, bzw. auf die Tafel im Klassenraum",
+
+            "Sheets": "Arbeitsblättern",
+            "SheetsContent": "Die Lernaktivitäten finden Sie in Form von Arbeitsblättern vor (siehe pdf weiter unten).\n\n**Druck: Es ist unbedingt notwendig, die Arbeitsblätter in Originalgrösse zu drucken (A4 Format).** Drucker haben oft eine andere Grösse als Standardeinstellung.\n\nUm die Aktivität zu starten, legen Sie das Blatt auf den Tisch unter die Tinkerlamp."
+        },
+        "loadBearing": {
+            "Construction": "Konstruktion",
+            "ConstructionCaption": "Die Lernenden erstellen das Tragkraftdiagramm, indem sie die Paletten testen (mit der schwersten beginnend). Jede Palette wird auf die Gabel gelegt und von links nach rechts geschoben (Schwerpunkt von 0cm bis 120cm).\n\nFür jede Position des Schwerpunktes (40cm, 60cm, 80cm, 100cm, 120cm) wird ein Punkt für die erste tragfähige Palette auf das Arbeitsblatt übertragen. Die Lernenden notieren ebenfalls die Masse und die Distanz des Schwerpunktes auf den Achsen.",
+            "Discussion": "Am Ende der Aktivität haben die Lernenden ein komplettes Tragkraftdiagramm erstellt.\n\nDie Lehrperson benutzt die grüne Aktivierungskarte, um die Kurven des Tragkraftdiagrmms anzuzeigen. Allfällige Fehler werden diskutiert. Die Lehrperson erinnert an die Wicthtigkeit des Tragskraftdiagramms und wie es zu lesen ist. Die Lernenden könnten auch ein Quiz beantworten (Fragen z.B. Kann eine Ladung von 1200kg, die Ihren Schwerpunkt in der Mitte hat, auf eine Höhe von 4.20 Metern gehoben werden?)\n\nManche Szenarien beruhen auf einem Tragkraftdiagramm mit mehreren Kurven. Die Lehrperson kann daran eine Diskussion über den Zweck der verschiedenen Kurven aufbringen, insbesondere unter Referenz auf das Hebelgesetz.",
+            "Goals": "- ein Tragkraftdiagramm lesen\n- den Nutzen des Tragkraftdiagramms verstehen\n- verstehen, warum die Werte des Tragkraftdiagramms bisweilen von der Höhe der Ladung abhängen",
+            "Interface": "Die Lernenden benutzen die Paletten, um das Tragkraftdiagramm zu bearbeiten.\n\nJede Palette hat eine andere Masse (angezeigt auf der Palette). Wenn sie auf die Gabel des Gabelstaplers gesetzt wird, definiert sie die vom Gabelstapler transportierte Ladung. Die Position der Palette auf der Gabel gibt des Schwerpunkt an.\n\nDer Anzeigepunkt des Tragkraftdiagramms bewegt sich abhängig von der Palette und ihrer Position.",
+            "LoadBearing": "Tragkraftdiagramm",
+            "Setup": "Die Lernenden setzen alle Paletten unter das Tragkraftdiagramm. Dabei sollen die zur Verfügung stehenden Massen zu sehen sein (z.B. 2200kg, 2100kg, 2000kg,...).\n\nSie setzen das Arbeitsblatt (mit den leeren Achsen) unter das Tragkraftdiagramm, um ihre Beobachtungen notieren zu können."
+        },
+        "palletisation": {
+            "Control": "Die Lehrperson legt die grüne Aktivierungskarte unter die Tinkerlamp, um den Schwerpunkt anzuzeigen.\n\nDie Lernenden und die Lehrperson diskutieren das Ergebnis.\n\n- Wie wurde die Lösung erarbeitet? (Strategie)\n- Wenn die Beladung nicht korrekt ist: warum? wie kann es verbessert werden?\n- Ist die Beladung stabil? Was könnte beim Bremsen des Gabelstaplers geschehen?\n\nWenn die Probleme erkannt wurden, desaktiviert die Lehrperson die Anzeige des Schwerpunktes (rote Aktivierungskarte) und die Lernenden arbeiten weiter.",
+            "Goals": "- das Beladen einer Palette mit verschieden grossen und verschieden schweren Paketen ausprobieren\n- die Wichtigkeit des Schwerpunktes für den Transport mit einem Gabelstapler diskutieren ",
+            "PalletisationTitle": "Verpackung der Paletten",
+            "ParcelRotation": "Drehung der Pakete",
+            "ParcelRotationCaption": "Die Pakete können vertikal oder horizontal gestellt werden. Mit einer 90-Grad Drehung kann die Orientierung des Paketes verändert werden.",
+            "Procedure": "Die Lernenden setzen die Pakete auf die Palette. Sie versuchen dabei, den Schwerpunkt korrekt zu setzen (in der Mitte und unten in der Seitenansicht, in der Mitte in der Sicht von oben).",
+            "SideView": "Seitenansicht",
+            "SideViewCaption": "Die Aktivität bietet zwei Versionen.\n\nDie Seitenansicht erlaubt, die Pakete mit Sicht von der Seite auf eine Palette zu laden.\n\nDas Ziel ist, die Pakete so zu setzen, dass der Schwerpunkt in der Mitte und unten liegt.",
+            "TopView": "Sicht von oben",
+            "TopViewCaption": "Diese Aktivität bietet zwei Versionen.\n\nDie Sicht von oben erlaubt, die Pakete auf eine Palette zu setzen, mit Sicht von oben.\n\nDas Ziel ist, die Pakete so zu setzen, dass der Schwerpunkt in der Mitte der Palette liegt."
+        },
+        "truck": {
+            "ControlCaption": "Die Lehrperson legt die grüne Aktivierungskarte unter die Tinkerlamp, um den Schwerpunkt anzuzeigen.\n\nDie Lernenden und die Lehrperson diskutieren das Ergebnis:\n\n- Wie wurde die Lösung erarbeitet? (Strategie)\n- Wenn die Beladung nicht korrekt ist: warum? wie kann es verbessert werden?\n- Ist die Reihenfolge bei der Auslieferung berücksichtigt?\n\n Wenn die Probleme erkannt wurden, desaktiviert die Lehrperson die Anzeige des Schwerpunktes (rote Aktivierungskarte) und die Lernenden arbeiten weiter.",
+            "Delivery": "Lieferung",
+            "DeliveryCaption": "Die Lernenden simulieren die Auslieferung, indem die Paletten des ersten Kunden entladen werden.\n\nDie Lehrperson begleitet diese Phase und achtet darauf, dass die Paletten über die Hinterseite des Lastwagens entladen werden. Die erlaubt, das praktische Problem aufzuzeigen, das entsteht, wenn die Auslieferreihenfolge nicht berücksichtigt wurde.\n\nDiskussion:\n\n-Welchen Einfluss hat das Entladen auf den Schwerpunkt?\n- Wie wird dies in der Praxis gehandhabt?",
+            "Goals": "- die Regeln der Lastverteilung beim Lastwagen anwenden.\n- die Reihenfolge bei der Auslieferung berücksichtigen\n- verschiedene praktische Situationen ausprobieren und diskutieren",
+            "Loading": "Beladen",
+            "LoadingCaption": "Die Lehrperson fordert die Lernenden auf, den Lastwagen zu beladen und dabei die Regeln der Lastverteilung zu beachten (theoretische Einführung bzw. Wiederholung).",
+            "PartialLoad": "Teil-Beladung",
+            "PartialLoadCaption": "Um die Frage nach Teil-Beladungen zu bearbeiten, werden die Lernenden aufgefordert, die Lastverteilung mit den Paletten für einen bestimmten Kunden zu realisieren.\n\nDies erlaubt, über die Notwendigkeit zu sprechen, Keile vor dem Beladen zu setzen, um Bewegungen im Falle einer Bremsung zu vermeiden (bspw. mit vertikal gesetzten Paletten).",
+            "StartCaption": "Legen Sie das Blatt \"Lastverteilung (Lastwagen)\" auf den Tisch.\n\nDie schwarze Linie zeigt die Ladefläche des Lastwagens.\n\nLegen Sie danach die Paletten unter die Tinkerlamp: die Masse und die Kundennummer werden für jede Palette angezeigt.",
+            "TruckLoading": "Lastverteilung (Lastwagen)"
+        },
+        "warehouse": {
+            "AlleyWidth": "Breite der Fahrwege",
+            "ControlPanelContent": "Szenarien, Lagerplan, Kontrolle der Simulation, ...",
+            "Docks": "Ein- und Ausgang",
+            "DocksAlternative": "Alternative",
+            "DockBadOrientation": "Richtung des Ausgangs-Quais",
+            "DockBadOrientationContent": "Problem: Richtung",
+            "DocksCenter": "frei erfundene Alternative: Quais im Zentrum",
+            "DocksIssues": "Probleme",
+            "DockOutOfWarehouse": "Eingangs-Quai ausserhalb der schwarzen Linie",
+            "DocksOk": "Eingang und Ausgang",
+            "DocksOkContent": "Eingang und Ausgang richtig positionieren:\n\n- im Inneren des Lagers (schwarze dicke Linie)\n- Kode an der Aussenseite, Pfeil zur Innenseite\n- Zugang: Gabelstapler erreicht hierüber die Quais, um Paletten abzugeben bzw. aufzunehmen",
+            "DocksPosition": "Eingang und Ausgang positionieren",
+
+            "Layout": "Lagerplan",
+            "LayoutContent": "Zeigt den Lagerplan in Echtzeit",
+
+            "Offices": "Büro und Nebenräume",
+            "OfficesContent": "Diese Räume sind sehr nützlich, um den Lageraufbau schwieriger zu machen, insbesondere wenn sie nicht gegen die Wände, sondern im Inneren des Lagers positioniert werden:\n\n- Verwaltungs-Büro und Pausenraum, mit Zugangspunkt (kleines blaues Rechteck; wird in zukünftigen Lernaktivitäten benutzt)\n- Nebenräume (Toilette, Technik-Raum, Treppenhaus, ...)",
+
+            "Start": "Legen Sie das Arbeitsblatt \"Lagerorganisation\" auf den Tisch.\n\nEin Rechteck (Wände des Lagers) und ein Gitter (Fahrwege der Gabelstapler) werden angezeigt. ",
+            "Shelves": "Regale",
+            "ShelvesAccessibility": "Zugängliches Regal",
+            "ShelvesContent": "Die blaue Punkte zeigen die Zugangspunkte (für die Gabelstapler).\n\nZungänglichkeit:\n\n- grüner Pfeil: zungängliche Seite\n- roter Pfeil: unzugängliche Seite\n- grünes Rechteck: mindestens eine Seite zugänglich\n- rotes Rechteck: nicht benutzbarer Lagerplatz ",
+            "ShelvesInaccessible": "Unzugängliches Regal",
+            "ShelvesSideBySide": "Regale nebeneinander",
+            "ShelvesSideBySideContent": "Jedes Regal ist von der Aussenseite zugänglich (grüne Dreiecke). Die Innenseite ist nicht zugänglich (rote Dreicke). ",
+            "Simulation": "Simulation",
+            "SimulationContent": "Kontrolle der Simulation und Anzeige der Statistiken.",
+            "StorageSurfaces": "Lagerfläche",
+            "WarehouseLayout": "Lager aufstellen",
+            "WarehouseOrganization": "Lager Organisation",
+            "WarehouseScenarios": "Lager: Szenarien",
+
+            "alleyWidth": {
+                "Goals": "- die hauptsächlichen Arten von Gabelstaplern kennen\n- den Einfluss des Types des Gabelstaplers auf die Lagerorganisation und die Arbeitseffizienz verstehen\n- den Einfluss der Anzahl von Gabelstaplern auf die Arbeitseffizienz verstehen",
+                "Procedure": "1. Die Lehrperson bestimmt die Position der Quais und des Büros.\n1. Die Lehrperson bestimmt den Typ von Gabelstapler (wenn mehrere Gruppen parallel arbeiten, können die Typen auf die Gruppen verteilt werden).\n1. Die Lernenden bauen das Lager auf (fixe Anzahl Regale oder mit Ziel maximale Lagerkapazität)\n1. Die Lernenden starten die Simulation und notieren das Ergebnis\n1. Wenn nur eine Tinkerlamp benutzt wird, wird ein neuer Typ Gabelstapler gewählt, das Lager angepasst und eine neue Simulation gestartet.\n\nDiskussion: Einfluss des Typen des Gabelstaplers auf den Lageraufbau und die Effizienz\n\n- der Gegengewichtsstaplerbenötigt breitere Fahrwege: die Lagerkapazität ist verringer\n- der Gegengewichtsstapler fährt schneller: Arbeitseffizienz ist erhöht\n- Kompromiss zwischen Lagerkapazität und Effizienz: wie soll man entscheiden?",
+                "Procedure2": "1. Die Lernenden bauen ein Lager auf (oder verwenden ein bestehendes).\n1. Die Lernenden starten mehrere Simulationen, wobei die Anzahl Gabelstapler verändert wird (z.B. 1,2,4,8). Sie notieren die Ergebnisse.\n1. Diskussion: die Ergebnisse werden verglichen und analysiert.\n\nFragen:\n\n- Ist die Arbeit effizienter mit mehreren Gabelstaplern?\n- Ist dies immer der Fall? Warum?\n\nErwartetes Ergebnis: Generell verbessert sich die Arbeitseffizienz durch eine höhere Anzahl Gabelstapler zunächst. Wenn zu viele Gabelstapler zugleich arbeiten, sind die Fahrwege zu belastet und die Effizienz verringert sich."
+            },
+
+            "org": {
+                "Goals": "- die Grundsätze des Lageraufbaus entdecken\n- sich mit dem Lageraufbau mit Tinkerlamp vertraut machen",
+                "Procedure": "1. Die Lehrperson definiert die Lage der Quais (Warenein- und ausgang) und des Büros.\n1.  Die Lernenden bauen das Lager auf mit dem Ziel, die Lagerkapazität zu maximieren.\n1.  Die Lernenden zeigen ihre Lösung der Lehrperson.\n1.  Die Lernenden starten eine Simulation und notieren die Ergebnisse.\n1.  Zusammenfassung: Die Klasse diskutiert gemeinsamdie vorgeschlagenen Lösungen und vergleicht die Ergebnisse der jeweiligen Simulationen.\n1.  Verbesserung: Die Lernenden versuchen ihren Lageraufbau zu verbessern. Dabei können evtl. Besonderheiten zu berücksichtigen sein (bspw. Art der gelagerten Waren, Kontext, ...)",
+                "ConceptBottleneck": "Konzept: Engpass",
+                "ConceptBottleneckCaption": "Zonen erkennen, die den Verkehr beschränken und zu Wartezeiten führen.\n\nTypisches Problem: Lade- und Entladezonen zu eng (links im Bild). Es handelt sich um eine stark befahrene Zone, für die breite Wege zu bevorzugen sind.",
+                "ConceptDoubleAlleys": "Konzept: Einzel- und Doppelreihen",
+                "ConceptDoubleAlleysCaption": "Einzelreihe (links)\n\n- Regale beidseitig zugänglich\n- Möglichkeit, Bestellvorbereitung und Wiederbelieferung zu trennen (z.B. Bestellvorbereitung von links, Widerbelieferung von rechts)\n\nDoppelreihe (rechts)\n\n- Regale nur einseitig zugänglich\n- höhere Lagerkapazität\n- langsamere Arbeit, wenn mehrere Gabelstapler in der gleichen Reihe Paletten holen oder bringen",
+                "ConceptTradeoff": "Konzept: Lagerkapazität / Arbeitseffizienz",
+                "ConceptTradeoffCaption": "Lagerkapazität (links)\n\n- erlaubt, mehr Waren zu lagern\n- langsamere Arbeit: nur ein Fahrweg, Wartezeiten, falls mehrere Gabelstapler in der gelichen Reihe arbeiten\n- Simulation: 32 Sek. pro Palette\n\nArbeitseffizienz (rechts)\n\n- reduzierte Lagerkapazität\n- Breite Fahrwege, viel Platz um die Quais herum, wenig Wartezeit, flüssiger Arbeitsablauf\n- Simulation: 25 Sek. pro Palette\n\nFragen / Diskussion\n\n- ökonomische Folgen (Lagerkosten, Arbeitskraft, ...)?\n- Welche Strategie ist zu bevorzugen, und wovon hängt die Entscheidung ab?"
+            },
+
+            "surfaces": {
+                "Goals": "-die Konzept Brutto- und Netto-Lagerfläche kennen\n- Brutto- und Netto-Lagerfläche eines Lagers schätzen können\n- das Konzept Nutzungsgrad der Lagerfläche kennen\n- die Faktoren verstehen, die den Nutzungsgrad beeinflussen",
+                "Procedure": "-Die Lehrperson bestimmt die Position der Quais und des Büro.\n- Die Lernenden stellen ein Lager auf unter Verwendung einer begrenzten Anzahl von Regalen (z.B. 8).\n- Die Lehrperson führt die Konzeote Brutto- und Netto-Lagerfläche sowie Nutzungsgrad ein.\n- Die Lernenden schätzen die entsprechenden Werte für ihr Lager.\n- Die Lernenden vergleichen die geschätzen mit den von der Tinkerlamp angezeigten Werten.\n\nDie Werte werden in der Klasse diskutiert:\n- Wie hoch / tief sind die Werte? (Netto-Lagerfläche und Nutzungsgrad sehr niedrig mit 8 Regalen)\n- Wie könnte die Netto-Lagerfläche vergrössert werden? (mehr Regale)\n- Wie könnte der Nutzungsgrad vergrössert werden? (mehr Regale, kleineres Lager)\n- Welche Vorteile hat es, den Nutzungsgrad zu erhöhren bzw. zu verringern? (siehe Link unten)",
+                "NetSurface": "Konzept: Netto-Lagerfläche",
+                "NetSurfaceCaption": "Die Netto-Lagerfläche entspricht der tatsächlich zur Lagerung von Waren genutzten Fläche, also nur der Regale.\n\nLa surface nette de stockage correspond à la surface effectivement utilisée pour stocker des marchandises, soit uniquement les étagères.",
+                "SurfaceUsage": "Konzept: Nutzungsgrad",
+                "SurfaceUsageCaption": "Der Nutzungsgrad entspricht der Netto-Lagerfläche geteilt durch der Brutto-Lagerfläche und wird in Prozent ausgedrückt.\n\nWie kann der Nutzungsgrad erhöht werden?\n\n- die Grösse des Lager verringern (Raumkosten sparen)\n- mehr Regale (erhöhte Lagerkapazität, möglicher negativer Einfluss auf die Arbeitseffizienz, siehe vorheriges Szenario)",
+                "RawSurface": "Konzept: Brutto-Lagerfläche",
+                "RawSurfaceCaption": "Die Brutto-Lagerfläche entspricht der gesamten Lagerfläche abzüglich:\n\n- Quais (Eingang und Ausgang)\n- Nebenräume"
+            }
+        }
+    }
+}

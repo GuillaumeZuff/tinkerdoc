@@ -1,70 +1,6 @@
-content2 =
-    pages: [
-        {
-            id: "page1"
-            label: "Page1"
-            cards: [
-                {
-                    id: "section11"
-                    label: "Section 1.1"
-                    type: "section"
-                    cards: [
-                        {
-                            id: "card111"
-                            label: "Card 1.1.1"
-                            type: "text"
-                        }
-                        {
-                            id: "card112"
-                            label: "Card 1.1.2"
-                            type: "text"
-                        }
-                    ]
-                }
-                {
-                    id: "section12"
-                    label: "Section 1.2"
-                    type: "section"
-                    cards: [
-                        {
-                            id: "card121"
-                            label: "Card 1.2.1"
-                            type: "text"
-                        }
-                        {
-                            id: "card122"
-                            label: "Card 1.2.2"
-                            type: "text"
-                        }
-                    ]
-                }
-            ]
-        }
-        {
-            id: "page2"
-            label: "Page2"
-            cards: [
-                {
-                    id: "section21"
-                    label: "Section 2.1"
-                    type: "section"
-                    cards: [
-                        {
-                            id: "card211"
-                            label: "Card 2.1.1"
-                            type: "text"
-                        }
-                        {
-                            id: "card212"
-                            label: "Card 2.1.2"
-                            type: "text"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
-content =
+content = {}
+
+content.home =
     pages: [
         {
             id: "start"
@@ -175,7 +111,7 @@ content =
         }
         {
             id: "activities"
-            label: "doc.activities.Activities"
+            label: "doc.activities.ActivitySheets"
             cards: [
                 {
                     id: "sheets"
@@ -186,7 +122,7 @@ content =
                     links: [
                         {
                             label: 'doc.activities.Sheets'
-                            target: '/tinkerlamp-fr.pdf'
+                            target: 'doc.activities.downloadLink'
                             type: 'file'
                         }
                     ]
@@ -205,24 +141,12 @@ content =
                     title: "doc.activities.SaveResult"
                     type: "message"
                     caption: "doc.activities.SaveResultContent"
-                    links: [
-                        {
-                            label: 'doc.activities.ScreenshotWindows'
-                            target: 'http://windows.microsoft.com/fr-fr/windows/take-screen-capture-print-screen#take-screen-capture-print-screen=windows-7'
-                            type: 'page'
-                        }
-                        {
-                            label: 'doc.activities.ScreenshotMac'
-                            target: 'https://support.apple.com/fr-fr/HT201361'
-                            type: 'page'
-                        }
-                    ]
                 }
             ]
         }
         {
             id: "warehouseLayout"
-            label: "doc.warehouse.WarehouseLayout"
+            label: "doc.warehouse.WarehouseOrganization"
             cards: [
                 {
                     id: "procedure"
@@ -359,18 +283,308 @@ content =
                     ]
                 }
                 {
-                    id: 'scenarios'
-                    label: 'doc.warehouse.WarehouseScenarios'
-                    title: 'doc.warehouse.WarehouseScenarios'
-                    type: 'subpage'
+                    id: "warehouseOrgScenario"
+                    label: "doc.Scenarios"
+                    title: "doc.Scenarios"
+                    type: "chapterLink"
+                    target: 'warehouseScenarios'
+                }
+            ]
+        }
+        {
+            id: "truckLoading"
+            label: "doc.truck.TruckLoading"
+            cards: [
+                {
+                    id: "truckLoading_video"
+                    label: "doc.ProcedureVideo"
+                    type: "youtube"
+                    videoId: "REd18-ybYfY"
+                }
+                {
+                    id: "truckLoading_setup"
+                    label: "doc.Setup"
+                    title: "doc.Setup"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at10.29.52_cipzqo"
+                    caption: "doc.truck.StartCaption"
+                }
+                {
+                    id: "truckLoading_goals"
+                    label: "doc.Goals"
+                    title: "doc.Goals"
+                    type: "message"
+                    caption: "doc.truck.Goals"
+                }
+                {
+                    id: "truckLoading_load"
+                    label: "doc.truck.Loading"
+                    title: "doc.truck.Loading"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at10.38.47_rtbjtz"
+                    caption: "doc.truck.LoadingCaption"
+                }
+                {
+                    id: "truckLoading_control"
+                    label: "doc.Control"
+                    title: "doc.Control"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at10.46.06_fslijz"
+                    caption: "doc.truck.ControlCaption"
+                }
+                {
+                    id: "truckLoading_delivery"
+                    label: "doc.truck.Delivery"
+                    title: "doc.truck.Delivery"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at10.49.59_dwilnt"
+                    caption: "doc.truck.DeliveryCaption"
+                }
+                {
+                    id: "truckLoading_partialLoad"
+                    label: "doc.truck.PartialLoad"
+                    title: "doc.truck.PartialLoad"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at10.53.28_lnowbx"
+                    caption: "doc.truck.PartialLoadCaption"
+                }
+            ]
+        }
+        {
+            id: "palletisation"
+            label: "doc.palletisation.PalletisationTitle"
+            cards: [
+                {
+                    id: "palletisation_video"
+                    label: "doc.ProcedureVideo"
+                    type: "youtube"
+                    videoId: "NLoKNkMv7V0"
+                }
+                {
+                    id: "palletisation_setup"
+                    label: "doc.Setup"
+                    title: "doc.Setup"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at10.29.52_cipzqo"
+                    caption: "doc.truck.StartCaption"
+                }
+                {
+                    id: "palletisation_sideview"
+                    label: "doc.palletisation.SideView"
+                    title: "doc.palletisation.SideView"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at11.33.13_f38de7"
+                    caption: "doc.palletisation.SideViewCaption"
+                }
+                {
+                    id: "palletisation_topview"
+                    label: "doc.palletisation.TopView"
+                    title: "doc.palletisation.TopView"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at11.34.49_kblthb"
+                    caption: "doc.palletisation.TopViewCaption"
+                }
+                {
+                    id: "palletisation_parcelRotation"
+                    label: "doc.palletisation.ParcelRotation"
+                    title: "doc.palletisation.ParcelRotation"
+                    type: "image"
+                    cloudinaryId: "palletisation_rotation_xtrqvi"
+                    caption: "doc.palletisation.ParcelRotationCaption"
+                }
+                {
+                    id: "palletisation_goals"
+                    label: "doc.Goals"
+                    title: "doc.Goals"
+                    type: "message"
+                    caption: "doc.palletisation.Goals"
+                }
+                {
+                    id: "palletisation_procedure"
+                    label: "doc.Procedure"
+                    title: "doc.Procedure"
+                    type: "message"
+                    caption: "doc.palletisation.Procedure"
+                }
+                {
+                    id: "palletisation_control"
+                    label: "doc.Control"
+                    title: "doc.Control"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at11.44.30_ajrdjo"
+                    caption: "doc.palletisation.Control"
+                }
+            ]
+        }
+        {
+            id: "loadBearing"
+            label: "doc.loadBearing.LoadBearing"
+            cards: [
+                {
+                    id: "loadBearing_video"
+                    label: "doc.ProcedureVideo"
+                    type: "youtube"
+                    videoId: "qKCKYBbWsjs"
+                }
+                {
+                    id: "loadBearing_interface"
+                    label: "doc.Interface"
+                    title: "doc.Interface"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at15.18.37_ptknan"
+                    caption: "doc.loadBearing.Interface"
+                }
+                {
+                    id: "loadBearing_goals"
+                    label: "doc.Goals"
+                    title: "doc.Goals"
+                    type: "message"
+                    caption: "doc.loadBearing.Goals"
+                }
+                {
+                    id: "loadBearing_setup"
+                    label: "doc.Setup"
+                    title: "doc.Setup"
+                    type: "message"
+                    caption: "doc.loadBearing.Setup"
+                }
+                {
+                    id: "loadBearing_construction"
+                    label: "doc.loadBearing.Construction"
+                    title: "doc.loadBearing.Construction"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at15.28.21_ytpdtc"
+                    caption: "doc.loadBearing.ConstructionCaption"
+                }
+                {
+                    id: "loadBearing_discussion"
+                    label: "doc.Discussion"
+                    title: "doc.Discussion"
+                    type: "image"
+                    cloudinaryId: "ScreenShot2015-04-14at15.32.52_xvoteh"
+                    caption: "doc.loadBearing.Discussion"
+                }
+            ]
+        }
+    ]
+
+content.warehouseScenarios =
+    pages: [
+        {
+            id: "warehouseScenarios"
+            label: "doc.warehouse.WarehouseScenarios"
+            cards: [
+                {
+                    id: "organization"
+                    label: "doc.warehouse.WarehouseOrganization"
+                    title: "doc.warehouse.WarehouseOrganization"
+                    type: "section"
                     cards: [
                         {
-                            id: "layout"
-                            label: "doc.warehouse.Layout"
-                            title: "doc.warehouse.Layout"
-                            type: "image"
-                            cloudinaryId: "warehouseLayout_voeoiw"
-                            caption: "doc.warehouse.LayoutContent"
+                            id: 'organizationProcedure'
+                            label: 'doc.Procedure'
+                            title: 'doc.Procedure'
+                            type: 'message'
+                            caption: 'doc.warehouse.org.Procedure'
+                        }
+                        {
+                            id: 'organizationConceptDoubleAlleys'
+                            label: 'doc.warehouse.org.ConceptDoubleAlleys'
+                            title: 'doc.warehouse.org.ConceptDoubleAlleys'
+                            type: 'image'
+                            cloudinaryId: 'warehouseOrgDoubleAlley_ohqjgl'
+                            caption: 'doc.warehouse.org.ConceptDoubleAlleysCaption'
+                        }
+                        {
+                            id: 'organizationConceptBottleneck'
+                            label: 'doc.warehouse.org.ConceptBottleneck'
+                            title: 'doc.warehouse.org.ConceptBottleneck'
+                            type: 'image'
+                            cloudinaryId: 'ScreenShot2015-04-13at15.04.36_nfoeur'
+                            caption: 'doc.warehouse.org.ConceptBottleneckCaption'
+                        }
+                        {
+                            id: 'organizationConceptTradeoff'
+                            label: 'doc.warehouse.org.ConceptTradeoff'
+                            title: 'doc.warehouse.org.ConceptTradeoff'
+                            type: 'image'
+                            cloudinaryId: 'ScreenShot2015-04-13at14.46.23_reaa9x'
+                            caption: 'doc.warehouse.org.ConceptTradeoffCaption'
+                        }
+                    ]
+                }
+                {
+                    id: "storageSurfaces"
+                    label: "doc.warehouse.StorageSurfaces"
+                    title: "doc.warehouse.StorageSurfaces"
+                    type: "section"
+                    cards: [
+                        {
+                            id: 'surfacesGoals'
+                            label: 'doc.Goals'
+                            title: 'doc.Goals'
+                            type: 'message'
+                            caption: 'doc.warehouse.surfaces.Goals'
+                        }
+                        {
+                            id: 'surfacesProcedure'
+                            label: 'doc.Procedure'
+                            title: 'doc.Procedure'
+                            type: 'message'
+                            caption: 'doc.warehouse.surfaces.Procedure'
+                        }
+                        {
+                            id: 'surfacesRaw'
+                            label: 'doc.warehouse.surfaces.RawSurface'
+                            title: 'doc.warehouse.surfaces.RawSurface'
+                            type: 'image'
+                            cloudinaryId: 'ScreenShot2015-04-13at16.05.38_rzwqul'
+                            caption: 'doc.warehouse.surfaces.RawSurfaceCaption'
+                        }
+                        {
+                            id: 'surfacesNet'
+                            label: 'doc.warehouse.surfaces.NetSurface'
+                            title: 'doc.warehouse.surfaces.NetSurface'
+                            type: 'image'
+                            cloudinaryId: 'ScreenShot2015-04-13at16.05.28_wavugy'
+                            caption: 'doc.warehouse.surfaces.NetSurfaceCaption'
+                        }
+                        {
+                            id: 'surfacesUsage'
+                            label: 'doc.warehouse.surfaces.SurfaceUsage'
+                            title: 'doc.warehouse.surfaces.SurfaceUsage'
+                            type: 'message'
+                            caption: 'doc.warehouse.surfaces.SurfaceUsageCaption'
+                        }
+                    ]
+                }
+                {
+                    id: "alleyWidth"
+                    label: "doc.warehouse.AlleyWidth"
+                    title: "doc.warehouse.AlleyWidth"
+                    type: "section"
+                    cards: [
+                        {
+                            id: 'alleyWidthGoals'
+                            label: 'doc.Goals'
+                            title: 'doc.Goals'
+                            type: 'message'
+                            caption: 'doc.warehouse.alleyWidth.Goals'
+                        }
+                        {
+                            id: 'alleyWidthProcedure'
+                            label: 'doc.Procedure'
+                            title: 'doc.Procedure'
+                            type: 'message'
+                            caption: 'doc.warehouse.alleyWidth.Procedure'
+                        }
+                        {
+                            id: 'alleyWidthProcedure2'
+                            label: 'doc.ProcedureAlternative'
+                            title: 'doc.ProcedureAlternative'
+                            type: 'image'
+                            cloudinaryId: 'ScreenShot2015-04-14at13.25.12_ehbntn'
+                            caption: 'doc.warehouse.alleyWidth.Procedure2'
                         }
                     ]
                 }

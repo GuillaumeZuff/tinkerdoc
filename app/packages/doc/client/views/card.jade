@@ -26,6 +26,6 @@ template(name="docCardLinks")
         ul.card-links
             each card.links
                 li.link
-                    a(href="#{this.target}" target="_blank")
+                    a(href=targetUrl target="_blank")
                         i(class=iconClasses)
                         | {{_ this.label}}

@@ -7,13 +7,21 @@
         "appUrl": "app.tinkerlamp.com",
         "AllowCameraUsage": "Autorisez l'utilisation de la caméra",
 
+        "Back": "Retour",
+
         "Calibration": "Calibration",
         "Connection": "Connexion",
         "ComputerConnection": "Connexion à l'ordinateur",
+        "Control": "Contrôle",
         "ControlPanel": "Panneau de contrôle",
         "ControlPanelContent": "Éléments",
 
+        "Discussion": "Discussion",
         "Documentation": "Documentation",
+
+        "Goals": "Objectifs",
+
+        "Interface": "Interface",
 
         "Login": "Login",
 
@@ -50,18 +58,52 @@
         },
         "activities": {
             "Activities": "Activités",
+            "ActivitySheets": "Fiches d'activités",
+            "downloadLink": "/tinkerlamp-fr.pdf",
             "RedGreenCard": "Utilisée dans de nombreuses activités, cette carte est utilisée pour activer/désactiver l'affichage de certaines informations et/ou fonctionnalités.\n\nElle permet au formateur de contrôler le déroulement d'une activité, en encourageant par exemple les élèves à chercher une meilleure solution avant d'afficher le résultat calculé par la Tinkerlamp.",
             
             "SaveResult": "Sauvegarde",
-            "SaveResultContent": "La possibilité de sauvegarder un résultat (par ex. mise en place d'entrepôt et données de simulation) est en cours d'élaboration.\n\nLes solutions suivantes sont proposées pour l'instant:\n\n- capture d'écran (Windows, Mac) et, si plusieurs Tinkerlamps sont utilisées, partage par email ou service de stockage (par ex. Dropbox)\n- copie des résultats sur papier puis sur le tableau noir/blanc de la classe",
+            "SaveResultContent": "La possibilité de sauvegarder un résultat (par ex. mise en place d'entrepôt et données de simulation) est en cours d'élaboration.\n\nLes solutions suivantes sont proposées pour l'instant:\n\n- capture d'écran ([Windows](http://windows.microsoft.com/fr-fr/windows/take-screen-capture-print-screen#take-screen-capture-print-screen=windows-7), [Mac](https://support.apple.com/fr-fr/HT201361)) et, si plusieurs Tinkerlamps sont utilisées, partage par email ou service de stockage (par ex. Dropbox)\n- copie des résultats sur papier puis sur le tableau noir/blanc de la classe",
 
-            "ScreenshotWindows": "Capture d'écran sur Windows",
-            "ScreenshotMac": "Capture d'écran sur Mac",
 
             "Sheets": "Fiches à imprimer",
             "SheetsContent": "Les activités pédagogiques se présentent sous la forme de fiches de travail (fichier PDF ci-dessous).\n\n**Impression: il est important d'imprimer les fiches à leur taille originale (format A4).** Les imprimantes proposent souvent par défaut une échelle différente (adaptée aux marges de l'imprimante).\n\nPour démarrer une activité, placez simplement une fiche sur la table, sous la Tinkerlamp."
         },
+        "loadBearing": {
+            "Construction": "Construction de la plaque de charge",
+            "ConstructionCaption": "Les élèves construisent la plaque de charge en testant les palettes (en commençant avec la plus lourde). Chaque palette est placée sur les fourches du chariot élévateur, et déplacée de gauche à droit (centre de gravité de 0cm à 120cm).\n\nPour chaque position du centre de gravité (40cm, 60cm,  80cm, 100cm et 120cm), un point est reporté sur la fiche d'exercice pour la première palette qui peut être portée. Les élèves reportent également la masse et la distance du centre de gravité sur les axes.",
+            "Discussion": "A la fin de l'exercice, les élèves obtiennent une plaque de charge complète.\n\nLe formateur utilise la carte d'activation verte pour afficher les courbes de la plaque de charge. Les éventuelles erreurs sont discutées. Le formateur en profite pour rappeler l'importance de la plaque de charge et la façon de la lire. Il peut également distribuer un quizz aux élèves (question type: est-ce qu'une charge de 1200kg ayant son centre de gravité en son centre peut être levée à 4.20 mètres?).\n\nCertains scénarios sont basés sur une plaque de charge avec plusieurs courbes (différentes hauteurs). Le formateur peut en profiter pour questionner les élèves sur les raisons de l'existence de ces deux courbes, en faisant notamment référence à la loi des leviers.",
+            "Goals": "- être capable de lire une plaque de charge\n- comprendre l'utilité de la plaque de charge\n- comprendre pourquoi les valeurs de la plaque de charge dépendent parfois de la hauteur de la charge",
+            "Interface": "Les élèves utilisent les palettes pour manipuler la plaque de charge.\n\nChaque palette a une masse différente (affichée sur la palette). Une fois placée sur les fourches du chariot élévateur, elle définit la charge déplacée par le chariot élévateur. La position de la palette sur les fourches indique la position du centre de gravité de la charge.\n\nLe curseur de la plaque de charge se déplace en fonction de la palette chargée sur le chariot élévateur et de sa position.",
+            "LoadBearing": "Plaque de charge",
+            "Setup": "Les élèves placent toutes les palettes sous la plaque de charge, de façon à voir les masses à disposition pour l'exercice (par ex. 2200kg, 2100kg, 2000kg, ...).\n\nIls placent la fiche d'exercice (avec les axes vides) sous la plaque de charge pour pouvoir noter leurs observations."
+        },
+        "palletisation": {
+            "Control": "Les élèves placent les paquets sur la palette, en essayant de placer le centre de gravité correctement (au centre et vers le bas pour la vue de côté, au centre pour la vue de dessus).",
+            "Goals": "- expérimenter le chargement d'une palette avec des paquets de taille et de masse différentes\n- amener une discussion sur l'importance du centre de gravité d'une palette pour le transport avec un chariot élévateur",
+            "PalletisationTitle": "Palettisation",
+            "ParcelRotation": "Rotation des paquets",
+            "ParcelRotationCaption": "Les paquets peuvent être placés en position verticale ou horizontale. Il suffit de tourner le paquet d'un quart de tour pour changer son orientation.",
+            "Procedure": "Les élèves placent les paquets sur la palette, en essayant de placer le centre de gravité correctement (au centre et vers le bas pour la vue de côté, au centre pour la vue de dessus).",
+            "SideView": "Vue de côté",
+            "SideViewCaption": "Cette activité est déclinée en deux versions.\n\nLa vue de côté permet de placer des paquets sur une palette, avec une vue de côté.\n\nLe but consiste à placer les paquets de telle sorte que le centre de gravité se trouve au centre et vers le bas de la palette.",
+            "TopView": "Vue de dessus",
+            "TopViewCaption": "Cette activité est déclinée en deux versions.\n\nLa vue de dessus permet de placer des paquets sur une palette, vue de dessus.\n\nLe but consiste à placer les paquets de telle sorte que le centre de gravité se trouve au centre de la palette."
+        },
+        "truck": {
+            "ControlCaption": "Le formateur place la carte d'activation verte sous la Tinkerlamp pour afficher le centre de gravité du chargement.\n\nLes élèves et le formateur discutent le résultat:\n\n- comment la solution a-t-elle été construite (stratégie)?\n- si le chargement n'est pas correct: pourquoi? Comment améliorer la solution?\n- l'ordre de livraison est-il respecté?\n\nSi des problèmes sont détectés, le formateur désactive l'affichage du centre de gravité (carte d'activation rouge) et les élèves se remettent au travail.",
+            "Delivery": "Livraisons",
+            "DeliveryCaption": "Les élèves simulent les livraisons en déchargeant les palettes du premier client.\n\nLe formateur accompagne cette phase en demandant aux élèves de glisser les palettes hors du camion par l'arrière: ceci permet de démontrer le problème pratique qui se pose si l'ordre de livraison n'a pas été pris en compte durant le chargement.\n\nDiscussion:\n\n- quel est l'impact de ce déchargement sur le centre de gravité?\n- Comment gère-t-on cette situation en pratique?",
+            "Goals": "- Appliquer les règles de répartition de la charge sur un pont de camion.\n- Tenir compte de la tournée (ordre de distribution)\n- Expérimenter et discuter différentes situations pratiques",
+            "Loading": "Chargement",
+            "LoadingCaption": "Le formateur demande aux élèves de charger le camion, en respectant les règles de répartition de la charge (introduction/rappel théorique éventuel).",
+            "PartialLoad": "Chargement partiel",
+            "PartialLoadCaption": "La question du chargement partiel peut être abordée avec cette activité: il suffit de demander aux élèves de réaliser un chargement avec les palettes destinées à un client en particulier.\n\nCela permet de discuter de la nécessité de placer des cales devant le chargement pour éviter un déplacement en cas de freinage (avec des palettes posées verticalement par exemple).",
+            "StartCaption": "Placez la fiche d'activité \"Répartition de la charge (camion)\" sur la table.\n\nLe pont du camion est entouré par un trait noir.\n\nPlacez ensuite les palettes sous la Tinkerlamp: la masse et le numéro de client de chaque palette s'affiche sur chaque palette.",
+            "TruckLoading": "Répartition de la charge (camion)"
+        },
         "warehouse": {
+            "AlleyWidth": "Largeur d'allée",
             "ControlPanelContent": "Scénarios, plan de l'entrepôt, contrôle de la simulation, ...",
             "Docks": "Quais",
             "DocksAlternative": "Quais - alternative",
@@ -73,6 +115,7 @@
             "DocksOk": "Quais",
             "DocksOkContent": "Position des quais\n\n- A l'intérieur de l'entrepôt (ligne noire épaisse)\n- Tags près du bord, flèche à l'intérieur\n- Type de quai: **arrivage** (flèche pointe vers l'intérieur) et **expédition** (flèche pointe vers l'extérieur)\n- Accès: utilisés par les chariots élévateurs pour déposer/prendre des palettes",
             "DocksPosition": "Position des quais",
+
             "Layout": "Plan de l'entrepôt",
             "LayoutContent": "Montre en temps réel le plan de l'entrepôt.",
 
@@ -88,7 +131,38 @@
             "ShelvesSideBySideContent": "Chaque étagère est accessible depuis l'extérieur. Les accès intérieurs ne sont pas utilisables (triangles rouges).",
             "Simulation": "Simulation",
             "SimulationContent": "Contrôle de la simulation et affichage des statistiques.",
-            "WarehouseLayout": "Entrepôt"
+            "StorageSurfaces": "Surfaces de stockage",
+            "WarehouseLayout": "Entrepôt",
+            "WarehouseOrganization": "Organisation de l'entrepôt",
+            "WarehouseScenarios": "Entrepôt: scénarios",
+
+            "alleyWidth": {
+                "Goals": "- connaître les principaux types de chariots élévateurs\n- comprendre l'impact du type de chariot élévateur sur la mise en place de l'entrepôt et l'efficacité du travail\n- comprendre l'impact du nombre de chariots élévateurs sur l'efficacité du travail",
+                "Procedure": "1. Le formateur définit la position des quais et des bureaux\n1.  Le formateur définit le type de chariot élévateur utilisé (si plusieurs groupes travaillent en parallèle, les types peuvent être répartis entre les groupes)\n1.  Les élèves réalisent une implantation (nombre d'étagères fixe ou maximisation de la capacité de stockage)\n1.  Les élèves démarrent une simulation et prennent note du résultat\n1.  Si une seule Tinkerlamp est utilisée, un autre type de chariot élévateur est choisit, l'implantation est adaptée et une nouvelle simulation est démarrée\n\nDiscussion: impact du type de chariot élévateur sur l'implantation et l'efficacité\n\n- le contrepoids a besoin d'allées de travail plus larges: la capacité de stockage est donc réduite\n- le contrepoids se déplace plus rapidement: l'efficacité du travail est donc augmentée\n- compromis entre capacité de stockage et efficacité: comment faire le choix?",
+                "Procedure2": "- Les élèves réalisent une implantation (ou en réutilisent une existante)\n- Les élèves démarrent plusieurs simulation, en variant le nombre de chariots élévateurs (par ex. 1, 2, 4, 8). Ils prennent note des résultats.\n- Discussion: les résultats obtenus sont comparés et analysés.\n\nQuestions:\n\n- Est-ce que le travail est plus efficace avec plus de chariots élévateurs?\n- Est-ce toujours le cas? Pourquoi?\n\nRésultat attendu: augmenter le nombre de chariots élévateurs améliore généralement l'efficacité dans un premier temps, mais lorsque le nombre de chariots devient trop élevé, les allées de circulation sont encombrées et l'efficacité baisse (temps d'attente)."
+            },
+
+            "org": {
+                "Goals": "- découvrir les principes de base de la mise en place d'un entrepôt de stockage\n- se familiariser avec la mise en place d'entrepôt à l'aide de la Tinkerlamp",
+                "Procedure": "1. Le formateur définit la position des quais et des bureaux\n2. Les élèves réalisent une implantation maximisant la capacité de stockage\n3. Les élèves présentent leur solution au formateur\n4. Les élèves lancent une simulation et prennent note des résultats\n5. Synthèse: toute la classe commente les solutions proposées et compare les résultats.\n6. Amélioration: les élèves tentent d'améliorer leur mise-en-place, en tenant éventuellement compte de contraintes particulières (par ex. type de marchandises stockées, contexte, ...)",
+                "ConceptBottleneck": "Concept: Goulot d'étranglement",
+                "ConceptBottleneckCaption": "Identifier les zones qui restreignent la circulation et génèrent des temps d'attente.\n\nProblème typique: zone de chargement et de déchargement trop serrée (image de gauche). Il s'agit d'une zone à forte circulation, où il est judicieux de créer des allées de circulation larges.",
+                "ConceptDoubleAlleys": "Concept: allées simples et doubles",
+                "ConceptDoubleAlleysCaption": "Allée simple (gauche)\n\n- étagères accessibles des deux côtés\n- possibilité de séparer préparation de commande et réapprovisionnement (par ex. préparation à gauche, réapprovisionnement depuis la droite)\n\nAllée double (droite)\n\n- étagères accessible d'un seul côté\n- capacité de stockage plus élevée\n- travail plus lent si plusieurs chariots élévateurs prennent/déposent une palette sur le même rayonnage",
+                "ConceptTradeoff": "Concept: capacité de stockage / efficacité du travail",
+                "ConceptTradeoffCaption": "Capacité de stockage (gauche)\n\n- Permet de stocker plus de marchandises\n- Travail plus lent: allées de circulation uniques, temps d'attente si plusieurs chariots élévateurs travaillent dans la même allée\n- Simulation: 32s. par palette\n\nEfficacité du travail (droite)\n\n- Capacité de stockage réduite\n- Larges allées de circulation, espace important autour des quais, très peu d'attente, travail fluide\n- Simulation: 25s. par palette\n\nQuestions/discussion\n\n- Conséquences économiques (coût de stockage, main-d'oeuvre, ...)?\n- Quelle stratégie est préférable, dans quel contexte?"
+            },
+
+            "surfaces": {
+                "Goals": "- connaître les concepts de surface brute et de surface nette de stockage\n- être capable d'estimer la surface brute/nette de stockage d'un entrepôt\n- connaître le concept de degré d'utilisation des surfaces\n- comprendre les facteurs qui influencent le degré d'utilisation des surfaces",
+                "Procedure": "1. Le formateur définit la position des quais et des bureaux\n1.  Les élèves réalisent une implantation, avec un nombre limité d'étagères (8 par ex.)\n1.  Le formateur introduit les concepts de surface brute et nette de stockage et de degré d'utilisation des surfaces\n1.  Les élèves estiment les valeurs pour l'implantation qu'ils ont réalisée\n1.  Les élèves comparent leur estimation avec les valeurs affichées par la Tinkerlamp\n\nToute la classe discute les valeurs obtenues:\n\n- Sont-elles hautes/basses? (Surface nette et degré d'utilisation très bas avec 8 étagères)\n- Comment pourrait-on augmenter la surface nette de stockage? (plus d'étagères)\n- Comment pourrait-on augmenter le degré d'utilisation des surfaces? (plus d'étagères, entrepôt moins grand)\n- Quel est l'avantage d'augmenter/réduire le degré d'utilisation des surfaces? (voir liens ci-dessous)",
+                "NetSurface": "Concept: Surface nette de stockage",
+                "NetSurfaceCaption": "La surface nette de stockage correspond à la surface effectivement utilisée pour stocker des marchandises, soit uniquement les étagères.",
+                "SurfaceUsage": "Concept: degré d'utilisation des surfaces",
+                "SurfaceUsageCaption": "Le degré d'utilisation des surfaces correspond à la surface nette de stockage, divisée par la surface brute de stockage. Il est exprimé en pourcentage.\n\nComment augmenter le degré d'utilisation des surfaces?\n\n- réduire la taille de l'entrepôt (économie de loyer)\n- ajouter des étagères (augmentation de la capacité de stock, impact négatif possible sur l'efficacité - voir scénario précédent)",
+                "RawSurface": "Concept: Surface brute de stockage",
+                "RawSurfaceCaption": "La surface brute de stockage correspond à la totalité de la surface de l'entrepôt, moins:\n\n- les quais (arrivage et expédition)\n- les locaux annexes"
+            }
         }
     }
 }

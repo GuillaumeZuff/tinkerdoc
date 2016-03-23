@@ -4,10 +4,165 @@
     "SiteName": "Tinkerlamp",
 
     "doc": {
+        "appUrl": "app.tinkerlamp.com",
+        "AllowCameraUsage": "Allow camera usage",
+
+        "Back": "Back",
+
+        "Calibration": "Calibration",
+        "Connection": "Connection",
+        "ComputerConnection": "Computer connection",
+        "Control": "Check",
+        "ControlPanel": "Control panel",
+        "ControlPanelContent": "Elements",
+
+        "Discussion": "Discussion",
+        "Documentation": "Documentation",
+
+        "Goals": "Goals",
+
+        "Interface": "Interface",
+
+        "Login": "Login",
+
+        "PositionCamera": "Camera position",
         "Procedure": "Procedure",
+        "ProcedureVideo": "Procedure (vidéo)",
 
+        "RedGreenCard": "Red/green card",
+
+        "Scenarios": "Scenarios",
+        "ScenariosContent": "Click on a name to start the corresponding scenario.\n\nEach scenario is described in the following pages.\n\nStar: custom scenarios (under development).",
         "Start": "Start",
+        "StartDone": "Done",
+        "Setup": "Setup",
 
-        "TinkerlampSetup": "Tinkerlamp - setup"
+        "start": {
+            "Done": "Place an activity sheet under the Tinkerlamp to start learning!",
+            "EnableCamera": "The web browser needs your authorization to use the webcam. If you use Google Chrome, this question will appear only once.",
+            "Login": "Move the webcam such that it sees the tag sticked on the foot of your Tinkerlamp. Click on the button \"Enter\n when the tag has been detected.",
+            "PositionCamera": "Place the webcam such that the foot of the Tinkerlamp is barely visible at the top of the image.",
+            "TinkerlampPosition": "Place the Tinkerlamp next to your computer, on a light surface (you may use a large sheet of white paper if the table is dark).",
+            "UsbConnection": "Connect the Tinkerlamp to a free USB port on your computer.",
+            "WebBrowserChoice": "Please use a recent version of Google Chrome or Firefox."
+        },
+        "calibration": {
+            "AlignCalibrationSheet": "Align the calibration sheet with the black cross",
+            "Alignment": "Alignment",
+
+            "HideAndRemove": "Finish",
+            "HideTagAndRemoveSheet": "Hide a tag with your hand et remove the calibration sheet",
+
+            "Start": "Startup",
+            "StartCaption": "Place the calibration sheet on the table."
+        },
+        "activities": {
+            "Activities": "Activities",
+            "ActivitySheets": "Worksheets",
+            "downloadLink": "/tinkerlamp-en.pdf",
+            "RedGreenCard": "Used by many activities, this card toggle the display of some information of some functionalities.\n\nIt allows the teacher to control the proceedings of an activity, by encouragin for instance the students to search for a better solution before checking the result computed by the Tinkerlamp.",
+            
+            "SaveResult": "Saving results",
+            "SaveResultContent": "The possibility to save results (e.g. a warehouse layout with simulation data) is under development.\n\nFor now, you can save results using the following techniques:\n\n- screenshots and, if several Tinkerlamps are used, sharing through email or a cloud storage solution (e.g. Dropbox)\n- Copy the results on a sheet of paper and then draw them on the class whiteboard to share them with the other students",
+
+
+            "Sheets": "Printable worksheets",
+            "SheetsContent": "The pedagogical activities take the form of A4 worksheets (PDF file below).\n\n**Printing: it is important to print the worksheets at their original size (A4 format).** Printers often propose to scale down the print area to fit the printer margins.\n\nTo start an activity, simply place the corresponding worksheet under the Tinkerlamp."
+        },
+        "loadBearing": {
+            "Construction": "Plate construction",
+            "ConstructionCaption": "The students build the load-bearing capacity plate by testing the different pallets (starting with the heaviest one). Each pallet is placed on the forks and moved from left to right (gracity center from 0cm to 120cm).\n\nFor each position (40cm, 60cm, 80cm, 100cm and 120cm), a point is drawn on the worksheet if the position is valid (green point). For each new point, the students write down the mass of the current pallet as well as the gravity center position (defines the limit at this point).",
+            "Discussion": "At the end of the exercise, the students obtain a complete load-bearing capcity plate.\n\nThe teacher use the red/green card to toggle the curves of the plate. Potential errors are discussed and the teacher takes the occasion to remind the students of the importance of the load-bearing capacity plate and the correct way to read it. It is also possible to distribute a quizz to test the ability of the students to read the plate (e.g. is it possible to lift a pallet of 1200kg to 4.20m with the gravity center at the center?).\n\nSome scenarios are based on a plate with multiple curves (different heights). The teacher can use it as an opportunity to ask questions (e.g. why are there 2 curves? how is it related to the levers' law?, ...).",
+            "Goals": "- be able to read a load-bearing capacity plate\n- understand why a load-bearing capacity plate is useful\n- understand why the values given by the load-bearing capacity plate depend on the height and on the mass",
+            "Interface": "The students use pallets to manipulate the load-bearing capacity plate.\n\nEach pallet has a different mass (displayed on the pallet when it is below the Tinkerlamp). When a pallet is placed on the forks of the forklift, it defines the load of the pallet lifted by the forklift. The position of the pallet on the forks also indicate the distance of the gravity center of the lifted pallet.\n\nThe poniter on the load-bearing capacity plate moves according to the mass and the position of the pallet placed on the forklift and allows students to test wether the height/mass combination is valid.",
+            "LoadBearing": "Load-bearing capacity plate",
+            "Setup": "The students place all the pallets under the load-bearing capacity plate, so that they can see the mass of each pallet (e.g. 2100kg, 2000kg, ...).\n\nThey place the worksheet with the empty axes under the plate to write down their observations."
+        },
+        "palletisation": {
+            "Control": "The students place the parcels on the pallet and try to keep the gravity center of the pallet in an optimal position (center of the pallet for the top-view, center and bottom for the side-view).",
+            "Goals": "- acquire some experience of palletisation with parcels of different sizes and masses\n- discuss the importance of the gravity center for the transport of pallets (using for instance a forklift)",
+            "PalletisationTitle": "Palettisation",
+            "ParcelRotation": "Parcels rotation",
+            "ParcelRotationCaption": "The parcels can be rotated (horizontal or vertical orientation). Simply rotate a parcel by 90 degrees to change its orientation.",
+            "Procedure": "The students place the parcels on the pallet, trying to keep the gravity center in an optimal position.",
+            "SideView": "Side-view",
+            "SideViewCaption": "This activity has two versions: side-view and top-view.\n\nThe side-view lets you place parcels on a pallet from a side perspective.\n\nThe goal consists in placing parcels such that the gravity center of the pallet stays as close as possible to the center of the pallet (center-bottom from the side-view perspective).",
+            "TopView": "Top-view",
+            "TopViewCaption": "This activity has two versions: side-view and top-view.\n\nThe top-view lets you place parcels on a pallet from a top-perspective.\n\nThe goal consists in placing the parcels in such a way that the gravity center of the pallet stays as close as possible to the center of the pallet."
+        },
+        "truck": {
+            "ControlCaption": "The teacher place the red/green card under the Tinkleramp to toggle the display of the gravity center of the load..\n\nThe students and the teacher discuss the result:\n\n- what kind of strategy did the students follow to load the truck?\n- if the load is not correct: why? How can we improve the solution?\n- is the distribution order resepected?\n\nIf errors/problems are detected, the teacher inactivates the display of the gravity center and the students try to improve their solution.",
+            "Delivery": "Deliveries",
+            "DeliveryCaption": "The students simulate the delivery to the first customer by unloading the corresponding pallets.\n\nThe teacher asks them to slide the pallets out of the truck from the back, as if they were doing it in reality: this allows to demonstrate that it is not possible to do it without removing other pallets if the loading was not done by taking the deliveries order into account.\n\nDiscussion:\n\n- what is the impact of the deliveries on the gravity center?\n- How do we handle such situations in practice?",
+            "Goals": "- Apply the rules of a correct load on a truck.\n- Take into account the order of deliveries\n- Experiment and discuss the different problems that can be encountered and the corresponding practical solutions",
+            "Loading": "Loading",
+            "LoadingCaption": "The teacher asks students to load the truck, while respecting the loading rules (an introduction/reminder may be provided by the teacher before starting the activity).",
+            "PartialLoad": "Partial load",
+            "PartialLoadCaption": "It is possible to address the question of a partial load using this activity: simply ask the students to load the truck with the pallets for only one or two clients.\n\nYou can then discussion the necessity to place pallets at the front of the truck to wedge the load when the truck breaks (pallets placed vertically for instance).",
+            "StartCaption": "Place the worksheet under the Tinkerlamp.\n\nThe truck deck is surrounded by a black line.\n\nPlace the pallets under the Tinkerlamp: their mass and a client number is displayed on each pallet.",
+            "TruckLoading": "Load distribution (truck)"
+        },
+        "warehouse": {
+            "AlleyWidth": "Alley width",
+            "ControlPanelContent": "Scenarios, warehouse layout, simulation control, ...",
+            "Docks": "Docks",
+            "DocksAlternative": "Docks - alternative",
+            "DockBadOrientation": "Problem: orientation",
+            "DockBadOrientationContent": "Tag inside, arrow close to the wall: no access, the navigation grid is red.",
+            "DocksCenter": "Funny alternative: docks at the center",
+            "DocksIssues": "Issues",
+            "DockOutOfWarehouse": "Delivery dock outside",
+            "DocksOk": "Docks",
+            "DocksOkContent": "Docks position\n\n- Inside the warehouse (thick black line)\n- Tags close to the wall, arrow inside\n- Dock type: **delivery** (arrow points towards inside) and **expedition** (arrow points towards outside)\n- Access points (blue): used by the forklifts to store/pick pallets",
+            "DocksPosition": "Docks position",
+
+            "Layout": "Warehouse layout",
+            "LayoutContent": "Displays the warheouse layout in real-time",
+
+            "Offices": "Offices and side rooms",
+            "OfficesContent": "Very useful to complicate the layout of a warehouse, in particular when they are not placed close to a wall:\n\n- Administrative office with pause room (blue access point used by some scenarios)\n- Side room (toilets, technical room, stairs, ...)",
+
+            "Start": "Place the worksheet under the Tinkerlamp.\n\nA rectangle (warehouse walls) and a grid (forklifts movements) are displayed.",
+            "Shelves": "Shelves",
+            "ShelvesAccessibility": "Inaccessible shelf",
+            "ShelvesContent": "The blue squares indicate access points for forklifts. The top of the shelf shows its accessibility:\n\n- Green arrow: accessible side\n- Red arrow: inaccessible side\n- Green rectangle: at least one side is accessible\n- Red rectangle: not usable for storage",
+            "ShelvesInaccessible": "Inaccessible",
+            "ShelvesSideBySide": "Side-by-side",
+            "ShelvesSideBySideContent": "Each shelf is accessible from the external side. The internal sides (close to the other shelf) are not usable (red triangles).",
+            "Simulation": "Simulation",
+            "SimulationContent": "Simulation control and results display.",
+            "StorageSurfaces": "Storage surfaces",
+            "WarehouseLayout": "Warehouse",
+            "WarehouseOrganization": "Warehouse organisation",
+            "WarehouseScenarios": "Warehouse: scenarios",
+
+            "alleyWidth": {
+                "Goals": "- know the main types of forklifts\n- understand the impact of the type of forklift on the layout and the work efficiency\n- understand the impact of the amount of forklifts on the work efficiency",
+                "Procedure": "1. The teacher defines the position of the docks and of the offices\n1. The teacher chooses the type of forklifts (if several groups do the activity in parallel, different types can be assigned to different groups)\n1. The students build a warehouse (using a fixed amount of shelves, or putting as many as possible to maximise the storage capacity)\n1. The students start a simulation and write down the result\n1. If only one Tinkeerlamp is used, another type of forklifts is chosen, the layout is adapted and a new simulation is run\n\nDiscussion: impact of the type of forklift on the layout and the efficiency\n\n- the counterbalanced forklift needs bigger alleys: the storage capacity is thus reduced\n- the counterbalanced forklift is faster: the work efficiency is thus higher\n- trade-off between storage-capacity and efficiency: what are the parameters that should be considered?",
+                "Procedure2": "- The students build a warehouse (or reuse an existing one)\n- The students start several simulations, using different amounts of forklifts(e.g. 1, 2, 4 or 8). They write down the results.\n- Discussion: results are compared and analyzed.\n\nQuestions:\n\n- Is the efficiency increasing when more forklifts are working?\n- Is it always the case? Why?\n\nExpected result: augmenting the amount of forklifts improves the efficiency but only up to a certain point. When too many forklifts are used, the traffic becomes congested and the efficiency does not increase anymore or even start to decrease."
+            },
+
+            "org": {
+                "Goals": "- discover the principles of the warehouse layout\n- become familiar with the usage of the Tinkerlamp",
+                "Procedure": "1. The teacher chooses the position of the docks and of the offices\n2. The students build a warehouse maximising the storage capacity\n3. The students present their solution to the teacher\n4. The studnets start a simulation and write down the results\n5. Discussion: the class comments and compares the different solutions.\n6. Improvements: the students try to improve their layouts, taking into account the remarks of the rest of the class or special requirements (e.g. type of goods stored, industry, ...)",
+                "ConceptBottleneck": "Concept: Bottleneck",
+                "ConceptBottleneckCaption": "Identify the traffic bottlenecks where forklifts loose time.\n\nTypical issue: not enough space around the docks (left image). There is ususally a lot of traffic in front of the docks: it is then a good idea to leave enough space for forklifts.",
+                "ConceptDoubleAlleys": "Concept: simple or double alleys",
+                "ConceptDoubleAlleysCaption": "Simple alley (left)\n\n- shelves accessible on both sides\n- it's possible to separate the picking from the restocking (e.g. ordre preparation on the left, restocking on the right)\n\nDouble alley (right)\n\n- Shelves accessible on one side only\n- higher storage capacity\n- slower work if several forklifts must pick/store goods at the same moment",
+                "ConceptTradeoff": "Concept: storage capacity vs efficiency",
+                "ConceptTradeoffCaption": "Storage capacity (left)\n\n- Allows to store more goods\n- Slower work: alleys are small, imply some waiting time if several forklifts work in the same alley at the same time\n- Simulation: 32s. per pallet\n\nWork efficiency (right)\n\n- Lower storage capacity\n- Large alleys, lots of space around the docks, almost no waiting time and fluid movements\n- Simulation: 25s. per pallet\n\nQuestions/discussion\n\n- Economical consequences (storage costs, salaries, ...)?\n- Which strategy is better? In which contexts?"
+            },
+
+            "surfaces": {
+                "Goals": "- know the concepts of raw and net storage surface\n- be able to estimate the raw/net storage surface of a warehouse\n- know the concept of surface usage ratio\n- understand the factors that influence the surface usage ratio",
+                "Procedure": "1. The teacher chooses the position of the docks and of the offices\n1. The students build a warehouse, using a limited amount of shelves (e.g. 8)\n1. The teacher explains the concepts of the raw storage surface, net storage surface and surface usage ratio\n1. The students estimate those values for their warehouse\n1. The students compare their estimates with the values given by the Tinkerlamp\n\nThe class discusses the values:\n\n- Are they high/low? (Net surface and usage ratio are low with 8 shelves)\n- How can we augment the net storage surface? (solution: add more shelves)\n- How can we increase the surface usage ratio?? (solution: more shelves or smaller warehouse)\n- What is the advantages and inconvenients of increasing/decreasing the surface usage ratio? (solution: trade-off between storage capacity and work efficiency)",
+                "NetSurface": "Concept: Net storage surface",
+                "NetSurfaceCaption": "The net storage surface corresponds to the surface actually used for storing goods (i.e. only the shelves).",
+                "SurfaceUsage": "Concept: surface usage ratio",
+                "SurfaceUsageCaption": "The surface usage ratio corresponds to the net storage surface, divided by the raw storage surface. It is a percentage.\n\nHow can we increase the surface usage ratio?\n\n- reduce the size of the warehouse (lower rent)\n- add more shelves (increase the storage capacity but decreases the efficiency)",
+                "RawSurface": "Concept: Raw storage surface",
+                "RawSurfaceCaption": "The raw storage surface corresponds to the full area of the warehouse, minus:\n\n- the docks (delivery and expedition)\n- the side rooms"
+            }
+        }
     }
 }

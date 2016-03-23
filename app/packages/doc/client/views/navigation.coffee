@@ -6,31 +6,39 @@ Template.docNavigation.rendered = ->
     }
 
 Template.docNavigation.helpers
+    isChapter: ->
+        @doc.isChapter()
+    backUrl: ->
+        FlowRouter.path('documentation',{},{lang:TAPi18n.getLanguage()})
     navItems: ->
          @doc.getNavigation()
 
 Template.docNavigation.events
     'click .docNavigationPage': (e,tmpl) ->
-        console.log 'setting path', @item
         tmpl.data.doc.setPath @item.path
         target = $('#'+@item.id)
         if @item.type is 'section'
         #if target? and not _.isEmpty(@item.children)
-            console.log 'scroll to', target.offset()?.top, target
             $('html body').animate({
                 scrollTop: target.offset()?.top
             }, 300)
         else
-            console.log 'scroll to top'
             $('html, body').scrollTop(0)
     'click .docNavigationLeaf': (e, tmpl) ->
         e.preventDefault()
         e.stopPropagation()
-        target = $('#'+@item.id)
-        $('html body').animate({
-            scrollTop: target.offset().top
-        }, 300)
-        $('.button-collapse').sideNav('hide')
+        switch @item.type
+            when 'chapterLink'
+                tmpl.data.doc.setChapter @item.target
+                $('html body').animate({
+                    scrollTop: 0
+                }, 300)
+            else
+                target = $('#'+@item.id)
+                $('html body').animate({
+                    scrollTop: target.offset().top
+                }, 300)
+                $('.button-collapse').sideNav('hide')
 
 # navigation tree
 # - item

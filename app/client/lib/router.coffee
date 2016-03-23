@@ -13,7 +13,7 @@ FlowRouter.route '/', {
         redirect 'documentation'
 }
 
-FlowRouter.route '/doc', {
+FlowRouter.route '/doc/:chapter?', {
     name: 'documentation'
     action: -> render 'documentation'
 }

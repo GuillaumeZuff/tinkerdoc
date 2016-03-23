@@ -11,7 +11,7 @@ template(name="docPage")
 template(name="docPageSection")
     div.docSection.section.scrollspy(id=section.id)
         if section.title
-            h3
+            h4
                 | {{_ section.title}}
         each section.cards
             +docPageCard(card=this)
