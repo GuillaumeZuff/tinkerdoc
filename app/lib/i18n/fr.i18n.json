@@ -127,7 +127,7 @@
             "Shelves": "Étagères / rayonnages",
             "ShelvesAccessibility": "Étagère accessible",
             "ShelvesContent": "Les carrés bleux indiques les points d'accès pour les chariots élévateurs. Le dessus de l'étagère indique l'accessibilité:\n\n- Flèche verte: côté accessible\n- Flèche rouge: côté inaccessible\n- Rectangle vert: au moins un côté accessible\n- Rectangle rouge: stockage inutilisable",
-            "ShelvesInaccessible": "Inaccessible",
+            "ShelvesInaccessible": "Etagère inaccessible",
             "ShelvesSideBySide": "Côte-à-côte",
             "ShelvesSideBySideContent": "Chaque étagère est accessible depuis l'extérieur. Les accès intérieurs ne sont pas utilisables (triangles rouges).",
             "Simulation": "Simulation",

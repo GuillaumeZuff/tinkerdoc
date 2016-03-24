@@ -125,9 +125,9 @@
 
             "Start": "Place the worksheet under the Tinkerlamp.\n\nA rectangle (warehouse walls) and a grid (forklifts movements) are displayed.",
             "Shelves": "Shelves",
-            "ShelvesAccessibility": "Inaccessible shelf",
+            "ShelvesAccessibility": "Accessible shelf",
             "ShelvesContent": "The blue squares indicate access points for forklifts. The top of the shelf shows its accessibility:\n\n- Green arrow: accessible side\n- Red arrow: inaccessible side\n- Green rectangle: at least one side is accessible\n- Red rectangle: not usable for storage",
-            "ShelvesInaccessible": "Inaccessible",
+            "ShelvesInaccessible": "Inaccessible shelf",
             "ShelvesSideBySide": "Side-by-side",
             "ShelvesSideBySideContent": "Each shelf is accessible from the external side. The internal sides (close to the other shelf) are not usable (red triangles).",
             "Simulation": "Simulation",
