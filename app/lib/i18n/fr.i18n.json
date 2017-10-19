@@ -4,7 +4,7 @@
     "SiteName": "Tinkerlamp",
 
     "doc": {
-        "appUrl": "app.tinkerlamp.com",
+        "appUrl": "www.tinkerlamp.com",
         "AllowCameraUsage": "Autorisez l'utilisation de la caméra",
 
         "Back": "Retour",
@@ -41,7 +41,7 @@
         "start": {
             "Done": "Placez une fiche d'activité pédagogique pour commencer à apprendre!",
             "EnableCamera": "Le navigateur web a besoin de votre autorisation pour utiliser la caméra. Si vous utilisez Google Chrome, cette demande apparaîtra une seule fois.",
-            "Login": "Déplacez la caméra de façon à ce qu'elle voie le tag collé sur le pied de votre Tinkerlamp. Cliquez sur le bouton \"Entrer\" lorsque le tag a été détecté.",
+            "Login": "Entrez le code collé sur le pied de votre Tinkerlamp dans le champ Code, puis cliquez sur Entrer",
             "PositionCamera": "Positionnez la caméra de telle sorte que le pied de votre Tinkerlamp soit à peine visible au sommet de l'image.",
             "TinkerlampPosition": "Placez la Tinkerlamp à côté de votre ordinateur, sur une surface claire (utilisez une grande feuille blanche si la table est foncée).",
             "UsbConnection": "Connectez la Tinkerlamp à un port USB de votre ordinateur.",
@@ -104,6 +104,7 @@
             "TruckLoading": "Répartition de la charge (camion)"
         },
         "warehouse": {
+            "AbcAnalysis": "Analyse ABC",
             "AlleyWidth": "Largeur d'allée",
             "ControlPanelContent": "Scénarios, plan de l'entrepôt, contrôle de la simulation, ...",
             "Docks": "Quais",
@@ -123,6 +124,8 @@
             "Offices": "Bureaux et locaux annexes",
             "OfficesContent": "Très utiles pour compliquer le travail de mise-en-place, notamment s'ils ne sont pas placés contre un mur mais à l'intérieur de l'entrepôt:\n\n- Bureau administratif et local de pause, avec point d'accès (sera utilisé dans des activités pédagogiques en développement)\n- Local annexe (wc, local technique, escaliers, ...)",
 
+            "PickingTime": "Temps de préparation de commandes",
+
             "Start": "Placez la fiche d'activité **Mise en place d'entrepôt** sur la table.\n\nUn rectangle (murs de l'entrepôt) et une grille (déplacement des chariots élévateurs) s'affichent.",
             "Shelves": "Étagères / rayonnages",
             "ShelvesAccessibility": "Étagère accessible",
@@ -137,6 +140,12 @@
             "WarehouseOrganization": "Organisation de l'entrepôt",
             "WarehouseScenarios": "Entrepôt: scénarios",
 
+            "abcAnalysis": {
+                "Goals": "- connaître le princpe d'une analyse ABC et son utilité\n- être capable de réaliser une analyse ABC,\n- comprendre l'impact de l'analyse ABC sur l'efficacité du travail",
+                "Procedure": "1. Les élèves réalisent l'implantation d'un entrepôt;\n2. Ils démarrent une simulation et notent les résultats. La classification ABC des articles est volontairement fausse pour leur permettre de l'améliorer;\n3. Les élèves utilisent le résultat de la simulation pour réaliser une analyse ABC;\n4. Les élèves reportent les résultats de leur analyse dans la simulation, dans le panneau 'Analyse ABC';\n5. Une nouvelle simulation est démarrée et les résultats sont notés;\n6. Les élèves et l'enseignant comparent et discutent les résultats des deux simulations;\n6. Dans le cas où aucune amélioration n'a été observée, les élèves testent différentes mise-en-place et tentent de comprendre, avec l'aide de l'enseignant, comment obtenir le meilleur résultat.",
+                "Controller": "Modifier la classe ABC des produits",
+                "ControllerCaption": "Cliquez sur la classe ABC d'un produit pour la modifier."
+            },
             "alleyWidth": {
                 "Goals": "- connaître les principaux types de chariots élévateurs\n- comprendre l'impact du type de chariot élévateur sur la mise en place de l'entrepôt et l'efficacité du travail\n- comprendre l'impact du nombre de chariots élévateurs sur l'efficacité du travail",
                 "Procedure": "1. Le formateur définit la position des quais et des bureaux\n1.  Le formateur définit le type de chariot élévateur utilisé (si plusieurs groupes travaillent en parallèle, les types peuvent être répartis entre les groupes)\n1.  Les élèves réalisent une implantation (nombre d'étagères fixe ou maximisation de la capacité de stockage)\n1.  Les élèves démarrent une simulation et prennent note du résultat\n1.  Si une seule Tinkerlamp est utilisée, un autre type de chariot élévateur est choisit, l'implantation est adaptée et une nouvelle simulation est démarrée\n\nDiscussion: impact du type de chariot élévateur sur l'implantation et l'efficacité\n\n- le contrepoids a besoin d'allées de travail plus larges: la capacité de stockage est donc réduite\n- le contrepoids se déplace plus rapidement: l'efficacité du travail est donc augmentée\n- compromis entre capacité de stockage et efficacité: comment faire le choix?",
@@ -152,6 +161,11 @@
                 "ConceptDoubleAlleysCaption": "Allée simple (gauche)\n\n- étagères accessibles des deux côtés\n- possibilité de séparer préparation de commande et réapprovisionnement (par ex. préparation à gauche, réapprovisionnement depuis la droite)\n\nAllée double (droite)\n\n- étagères accessible d'un seul côté\n- capacité de stockage plus élevée\n- travail plus lent si plusieurs chariots élévateurs prennent/déposent une palette sur le même rayonnage",
                 "ConceptTradeoff": "Concept: capacité de stockage / efficacité du travail",
                 "ConceptTradeoffCaption": "Capacité de stockage (gauche)\n\n- Permet de stocker plus de marchandises\n- Travail plus lent: allées de circulation uniques, temps d'attente si plusieurs chariots élévateurs travaillent dans la même allée\n- Simulation: 32s. par palette\n\nEfficacité du travail (droite)\n\n- Capacité de stockage réduite\n- Larges allées de circulation, espace important autour des quais, très peu d'attente, travail fluide\n- Simulation: 25s. par palette\n\nQuestions/discussion\n\n- Conséquences économiques (coût de stockage, main-d'oeuvre, ...)?\n- Quelle stratégie est préférable, dans quel contexte?"
+            },
+
+            "pickingTime": {
+                "Goals": "- connaître les différents types d'occupations,\n- comprendre l'influence des conditions de travail sur les temps d'occupation",
+                "Procedure": "1. Les élèves réalisent une implantation d'entrepôt et démarrent une simulation;\n2. Les élèves observent et prennent note des différents temps d'occupation, ainsi que le temps total de simulation;\n3. Les élèves modifient les conditions de travail selon les instructions de l'enseignant, et démarrent une nouvelle simulation;\n4. Les résultats sont comparés et discutés par toute la classe."
             },
 
             "surfaces": {

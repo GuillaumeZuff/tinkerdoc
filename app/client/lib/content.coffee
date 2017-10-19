@@ -10,14 +10,14 @@ content.home =
                     id: "video"
                     label: "doc.ProcedureVideo"
                     type: "youtube"
-                    videoId: "3Pmfl4Yqpo4"
+                    videoId: "zglWWiKI2-A"
                 }
                 {
                     id: "setup"
                     label: "doc.Setup"
                     title: "doc.Setup"
-                    type: "imageRight"
-                    cloudinaryId: "TinkerlampPosition_o0ogsu"
+                    type: "imageLeft"
+                    cloudinaryId: "tinkerlamp_position_zpwuva"
                     caption: "doc.start.TinkerlampPosition"
                 }
                 {
@@ -34,25 +34,23 @@ content.home =
                     label: "doc.appUrl"
                     title: "doc.appUrl"
                     type: "image"
-                    cloudinaryId: "homepage_toogus"
+                    cloudinaryId: "tinkerlamp_homepage_wekljf"
                     caption: "doc.start.WebBrowserChoice"
                 }
                 {
                     id: "allowCamera"
                     label: "doc.AllowCameraUsage"
                     title: "doc.AllowCameraUsage"
-                    titleInCaption: true
                     type: "image"
-                    cloudinaryId: "enableCamera_teebgy"
+                    cloudinaryId: "allow_camera_hcr9ye"
                     caption: "doc.start.EnableCamera"
                 }
                 {
                     id: "connection"
                     label: "doc.Login"
                     title: "doc.Login"
-                    titleInCaption: true
                     type: "image"
-                    cloudinaryId: "login_vzi9kd"
+                    cloudinaryId: "tinkerlamp_login_d96jte"
                     caption: "doc.start.Login"
                 }
                 {
@@ -81,7 +79,7 @@ content.home =
                     id: "video"
                     label: "doc.ProcedureVideo"
                     type: "youtube"
-                    videoId: "kXWTdzxg7Tk"
+                    videoId: "QsZysUBNVSE"
                 }
                 {
                     id: "startCalibration"
@@ -261,7 +259,7 @@ content.home =
                             label: "doc.Scenarios"
                             title: "doc.Scenarios"
                             type: "image"
-                            cloudinaryId: "warehouseScenarios_har9jq"
+                            cloudinaryId: "tinkerlamp_warehouse_scenarios_ycv7ni"
                             caption: "doc.ScenariosContent"
                         }
                         {
@@ -359,14 +357,6 @@ content.home =
                     label: "doc.ProcedureVideo"
                     type: "youtube"
                     videoId: "NLoKNkMv7V0"
-                }
-                {
-                    id: "palletisation_setup"
-                    label: "doc.Setup"
-                    title: "doc.Setup"
-                    type: "image"
-                    cloudinaryId: "ScreenShot2015-04-14at10.29.52_cipzqo"
-                    caption: "doc.truck.StartCaption"
                 }
                 {
                     id: "palletisation_sideview"
@@ -585,6 +575,59 @@ content.warehouseScenarios =
                             type: 'image'
                             cloudinaryId: 'ScreenShot2015-04-14at13.25.12_ehbntn'
                             caption: 'doc.warehouse.alleyWidth.Procedure2'
+                        }
+                    ]
+                }
+                {
+                    id: "abcAnalysis"
+                    label: "doc.warehouse.AbcAnalysis"
+                    title: "doc.warehouse.AbcAnalysis"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "abcAnalysisGoals"
+                            label: "doc.Goals"
+                            title: "doc.Goals"
+                            type: "message"
+                            caption: "doc.warehouse.abcAnalysis.Goals"
+                        }
+                        {
+                            id: 'abcAnalysisProcedure'
+                            label: 'doc.Procedure'
+                            title: 'doc.Procedure'
+                            type: 'message'
+                            caption: 'doc.warehouse.abcAnalysis.Procedure'
+                        }
+                        {
+                            id: "appUrl"
+                            label: "doc.warehouse.abcAnalysis.Controller"
+                            title: "doc.warehouse.abcAnalysis.Controller"
+                            type: "image"
+                            cloudinaryId: "tinkerlamp_abc_analysis_vm4z6d"
+                            caption: "doc.warehouse.abcAnalysis.ControllerCaption"
+                        }
+                    ]
+                }
+                {
+                    id: "pickingTime"
+                    label: "doc.warehouse.PickingTime"
+                    title: "doc.warehouse.PickingTime"
+                    type: "section"
+                    cards: [
+                        {
+                            id: "pickingTimeGoals"
+                            label: "doc.Goals"
+                            title: "doc.Goals"
+                            type: "image"
+                            cloudinaryId: "tinkerlamp_picking_time_zmd70p",
+                            caption: "doc.warehouse.pickingTime.Goals"
+                        }
+                        {
+                            id: 'pickingTimeProcedure'
+                            label: 'doc.Procedure'
+                            title: 'doc.Procedure'
+                            type: 'message'
+                            caption: 'doc.warehouse.pickingTime.Procedure'
                         }
                     ]
                 }

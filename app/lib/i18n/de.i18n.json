@@ -4,7 +4,7 @@
     "SiteName": "Tinkerlamp",
 
     "doc": {
-        "appUrl": "app.tinkerlamp.de",
+        "appUrl": "www.tinkerlamp.com",
         "AllowCameraUsage": "Kameranutzung erlauben",
 
         "Back": "Zurück",
@@ -41,7 +41,7 @@
         "start": {
             "Done": "Legen Sie das Blatt einer Lernaktivität auf, um mit dem Lernen zu beginnen!",
             "EnableCamera": "Der Web-Browser kann nur mit Ihrer Erlaubnis auf die Kamera zugreifen. Wenn Sie Google Chrome benutzen, erscheint die Aufforderung, Erlaubnis zu erteilen, nur einmal.",
-            "Login": "Bringen Sie die Kamera in Position, so dass der Aufkleber mit dem Kode auf dem Fuss der Tinkerlamp für die Kamera sichtbar ist.\n\nKlicken Sie auf \"Enter\", sobald der Kode erkannt wurde.",
+            "Login": "Geben Sie den Code, der am Fuß Ihres Tinkerlamps eingefügt ist, in das Feld Code ein und klicken Sie auf Enter.",
             "PositionCamera": "Richten Sie die Kamera so aus, dass der Fuss der Tinkerlamp gerade noch im oberen Teil des Bildes sichtbar ist.",
             "TinkerlampPosition": "Stellen Sie die Tinkerlamp neben Ihren Computer, über eine helle Oberfläche (benutzen Sie ein grosses weisses Blatt, falls der Tisch dunkel ist).",
             "UsbConnection": "Verbinden Sie die Tinkerlamp über einen USB-Anschluss mit Ihrem Computer.",
@@ -103,6 +103,7 @@
             "TruckLoading": "Lastverteilung (Lastwagen)"
         },
         "warehouse": {
+            "AbcAnalysis": "ABC Analyse",
             "AlleyWidth": "Breite der Fahrwege",
             "ControlPanelContent": "Szenarien, Lagerplan, Kontrolle der Simulation, ...",
             "Docks": "Ein- und Ausgang",
@@ -122,6 +123,9 @@
             "Offices": "Büro und Nebenräume",
             "OfficesContent": "Diese Räume sind sehr nützlich, um den Lageraufbau schwieriger zu machen, insbesondere wenn sie nicht gegen die Wände, sondern im Inneren des Lagers positioniert werden:\n\n- Verwaltungs-Büro und Pausenraum, mit Zugangspunkt (kleines blaues Rechteck; wird in zukünftigen Lernaktivitäten benutzt)\n- Nebenräume (Toilette, Technik-Raum, Treppenhaus, ...)",
 
+
+            "PickingTime": "Kommissionierzeit",
+
             "Start": "Legen Sie das Arbeitsblatt \"Lagerorganisation\" auf den Tisch.\n\nEin Rechteck (Wände des Lagers) und ein Gitter (Fahrwege der Gabelstapler) werden angezeigt. ",
             "Shelves": "Regale",
             "ShelvesAccessibility": "Zugängliches Regal",
@@ -136,6 +140,12 @@
             "WarehouseOrganization": "Lager Organisation",
             "WarehouseScenarios": "Lager: Szenarien",
 
+            "abcAnalysis": {
+                "Goals": "- das Prinzip einer ABC-Analyse und ihre Nützlichkeit kennen,\n- eine ABC-Analyse durchführen können,\n- den Einfluss der ABC-Analyse auf die Arbeitseffizienz verstehen",
+                "Procedure": "1. Die Schüler realisieren ein Lager;\n2. Sie starten eine Simulation und zeichnen die Ergebnisse auf. Die ABC-Klassifizierung der Artikel ist bewusst falsch, um sie zu verbessern,\n3. Die Schüler verwenden das Ergebnis der Simulation, um eine ABC-Analyse durchzuführen.\n4. Die Schüler geben die Ergebnisse ihrer Analyse in der Simulation im Panel \"ABC-Analyse\" an;\n5. Eine neue Simulation wird gestartet und die Ergebnisse werden notiert;\n6. Die Schüler und der Lehrer vergleichen und diskutieren die Ergebnisse der beiden Simulationen; Wenn keine Verbesserung festgestellt wurde, werden die Schüler verschiedene Setups testen und versuchen, mit Hilfe des Lehrers zu verstehen, wie das beste Ergebnis erzielt werden kann.",
+                "Controller": "Die ABC-Klasse von Produkten ändern",
+                "ControllerCaption": "Klicken Sie auf die ABC-Klasse eines Produkts, um es zu ändern."
+            },
             "alleyWidth": {
                 "Goals": "- die hauptsächlichen Arten von Gabelstaplern kennen\n- den Einfluss des Types des Gabelstaplers auf die Lagerorganisation und die Arbeitseffizienz verstehen\n- den Einfluss der Anzahl von Gabelstaplern auf die Arbeitseffizienz verstehen",
                 "Procedure": "1. Die Lehrperson bestimmt die Position der Quais und des Büros.\n1. Die Lehrperson bestimmt den Typ von Gabelstapler (wenn mehrere Gruppen parallel arbeiten, können die Typen auf die Gruppen verteilt werden).\n1. Die Lernenden bauen das Lager auf (fixe Anzahl Regale oder mit Ziel maximale Lagerkapazität)\n1. Die Lernenden starten die Simulation und notieren das Ergebnis\n1. Wenn nur eine Tinkerlamp benutzt wird, wird ein neuer Typ Gabelstapler gewählt, das Lager angepasst und eine neue Simulation gestartet.\n\nDiskussion: Einfluss des Typen des Gabelstaplers auf den Lageraufbau und die Effizienz\n\n- der Gegengewichtsstaplerbenötigt breitere Fahrwege: die Lagerkapazität ist verringer\n- der Gegengewichtsstapler fährt schneller: Arbeitseffizienz ist erhöht\n- Kompromiss zwischen Lagerkapazität und Effizienz: wie soll man entscheiden?",
@@ -153,9 +163,14 @@
                 "ConceptTradeoffCaption": "Lagerkapazität (links)\n\n- erlaubt, mehr Waren zu lagern\n- langsamere Arbeit: nur ein Fahrweg, Wartezeiten, falls mehrere Gabelstapler in der gelichen Reihe arbeiten\n- Simulation: 32 Sek. pro Palette\n\nArbeitseffizienz (rechts)\n\n- reduzierte Lagerkapazität\n- Breite Fahrwege, viel Platz um die Quais herum, wenig Wartezeit, flüssiger Arbeitsablauf\n- Simulation: 25 Sek. pro Palette\n\nFragen / Diskussion\n\n- ökonomische Folgen (Lagerkosten, Arbeitskraft, ...)?\n- Welche Strategie ist zu bevorzugen, und wovon hängt die Entscheidung ab?"
             },
 
+            "pickingTime": {
+                "Goals": "- die verschiedenen Teilzeiten kennen,\n- den Einfluss der Arbeitsbedingungen auf die Teilzeiten verstehen",
+                "Procedure": "1. Die Schüler führen eine Lagerimplementierung durch und starten eine Simulation;\n2. Die Studierenden beobachten und berücksichtigen die unterschiedlichen Teilzeiten sowie die Gesamtsimulationszeit;\n3. Die Schüler modifizieren die Arbeitsbedingungen gemäß den Anweisungen des Lehrers und starten eine neue Simulation;\n4. Die Ergebnisse werden von der gesamten Klasse verglichen und diskutiert."
+            },
+
             "surfaces": {
-                "Goals": "-die Konzept Brutto- und Netto-Lagerfläche kennen\n- Brutto- und Netto-Lagerfläche eines Lagers schätzen können\n- das Konzept Nutzungsgrad der Lagerfläche kennen\n- die Faktoren verstehen, die den Nutzungsgrad beeinflussen",
-                "Procedure": "-Die Lehrperson bestimmt die Position der Quais und des Büro.\n- Die Lernenden stellen ein Lager auf unter Verwendung einer begrenzten Anzahl von Regalen (z.B. 8).\n- Die Lehrperson führt die Konzeote Brutto- und Netto-Lagerfläche sowie Nutzungsgrad ein.\n- Die Lernenden schätzen die entsprechenden Werte für ihr Lager.\n- Die Lernenden vergleichen die geschätzen mit den von der Tinkerlamp angezeigten Werten.\n\nDie Werte werden in der Klasse diskutiert:\n- Wie hoch / tief sind die Werte? (Netto-Lagerfläche und Nutzungsgrad sehr niedrig mit 8 Regalen)\n- Wie könnte die Netto-Lagerfläche vergrössert werden? (mehr Regale)\n- Wie könnte der Nutzungsgrad vergrössert werden? (mehr Regale, kleineres Lager)\n- Welche Vorteile hat es, den Nutzungsgrad zu erhöhren bzw. zu verringern? (siehe Link unten)",
+                "Goals": "- die Konzept Brutto- und Netto-Lagerfläche kennen\n- Brutto- und Netto-Lagerfläche eines Lagers schätzen können\n- das Konzept Nutzungsgrad der Lagerfläche kennen\n- die Faktoren verstehen, die den Nutzungsgrad beeinflussen",
+                "Procedure": "- Die Lehrperson bestimmt die Position der Quais und des Büro.\n- Die Lernenden stellen ein Lager auf unter Verwendung einer begrenzten Anzahl von Regalen (z.B. 8).\n- Die Lehrperson führt die Konzeote Brutto- und Netto-Lagerfläche sowie Nutzungsgrad ein.\n- Die Lernenden schätzen die entsprechenden Werte für ihr Lager.\n- Die Lernenden vergleichen die geschätzen mit den von der Tinkerlamp angezeigten Werten.\n\nDie Werte werden in der Klasse diskutiert:\n- Wie hoch / tief sind die Werte? (Netto-Lagerfläche und Nutzungsgrad sehr niedrig mit 8 Regalen)\n- Wie könnte die Netto-Lagerfläche vergrössert werden? (mehr Regale)\n- Wie könnte der Nutzungsgrad vergrössert werden? (mehr Regale, kleineres Lager)\n- Welche Vorteile hat es, den Nutzungsgrad zu erhöhren bzw. zu verringern? (siehe Link unten)",
                 "NetSurface": "Konzept: Netto-Lagerfläche",
                 "NetSurfaceCaption": "Die Netto-Lagerfläche entspricht der tatsächlich zur Lagerung von Waren genutzten Fläche, also nur der Regale.\n\nLa surface nette de stockage correspond à la surface effectivement utilisée pour stocker des marchandises, soit uniquement les étagères.",
                 "SurfaceUsage": "Konzept: Nutzungsgrad",

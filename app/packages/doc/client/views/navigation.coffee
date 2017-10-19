@@ -18,10 +18,7 @@ Template.docNavigation.events
         tmpl.data.doc.setPath @item.path
         target = $('#'+@item.id)
         if @item.type is 'section'
-        #if target? and not _.isEmpty(@item.children)
-            $('html body').animate({
-                scrollTop: target.offset()?.top
-            }, 300)
+            $('html, body').animate({scrollTop: target.offset()?.top}, 300)
         else
             $('html, body').scrollTop(0)
     'click .docNavigationLeaf': (e, tmpl) ->
@@ -30,15 +27,14 @@ Template.docNavigation.events
         switch @item.type
             when 'chapterLink'
                 tmpl.data.doc.setChapter @item.target
-                $('html body').animate({
-                    scrollTop: 0
-                }, 300)
+                $('html, body').animate({scrollTop: 0}, 300)
             else
                 target = $('#'+@item.id)
-                $('html body').animate({
-                    scrollTop: target.offset().top
-                }, 300)
-                $('.button-collapse').sideNav('hide')
+                if target
+                    top = target.offset().top
+                    if top
+                        $('.button-collapse').sideNav('hide')
+                        $('html, body').animate({scrollTop:top}, 300)
 
 # navigation tree
 # - item

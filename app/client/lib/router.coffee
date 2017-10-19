@@ -15,5 +15,5 @@ FlowRouter.route '/', {
 
 FlowRouter.route '/doc/:chapter?', {
     name: 'documentation'
-    action: -> render 'documentation'
+    action: -> render 'documentation', 'documentationLayout'
 }

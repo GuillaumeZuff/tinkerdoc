@@ -4,7 +4,7 @@
     "SiteName": "Tinkerlamp",
 
     "doc": {
-        "appUrl": "app.tinkerlamp.com",
+        "appUrl": "www.tinkerlamp.com",
         "AllowCameraUsage": "Allow camera usage",
 
         "Back": "Back",
@@ -41,7 +41,7 @@
         "start": {
             "Done": "Place an activity sheet under the Tinkerlamp to start learning!",
             "EnableCamera": "The web browser needs your authorization to use the webcam. If you use Google Chrome, this question will appear only once.",
-            "Login": "Move the webcam such that it sees the tag sticked on the foot of your Tinkerlamp. Click on the button \"Enter\n when the tag has been detected.",
+            "Login": "Enter the code pasted on the foot of your Tinkerlamp in the Code field and click Enter",
             "PositionCamera": "Place the webcam such that the foot of the Tinkerlamp is barely visible at the top of the image.",
             "TinkerlampPosition": "Place the Tinkerlamp next to your computer, on a light surface (you may use a large sheet of white paper if the table is dark).",
             "UsbConnection": "Connect the Tinkerlamp to a free USB port on your computer.",
@@ -104,6 +104,7 @@
             "TruckLoading": "Load distribution (truck)"
         },
         "warehouse": {
+            "AbcAnalysis": "ABC Analysis",
             "AlleyWidth": "Alley width",
             "ControlPanelContent": "Scenarios, warehouse layout, simulation control, ...",
             "Docks": "Docks",
@@ -123,6 +124,8 @@
             "Offices": "Offices and side rooms",
             "OfficesContent": "Very useful to complicate the layout of a warehouse, in particular when they are not placed close to a wall:\n\n- Administrative office with pause room (blue access point used by some scenarios)\n- Side room (toilets, technical room, stairs, ...)",
 
+            "PickingTime": "Picking time",
+
             "Start": "Place the worksheet under the Tinkerlamp.\n\nA rectangle (warehouse walls) and a grid (forklifts movements) are displayed.",
             "Shelves": "Shelves",
             "ShelvesAccessibility": "Accessible shelf",
@@ -137,6 +140,12 @@
             "WarehouseOrganization": "Warehouse organisation",
             "WarehouseScenarios": "Warehouse: scenarios",
 
+            "abcAnalysis": {
+                "Goals": "- know the principle of an ABC analysis and its usefulness;\n- be able to perform an ABC analysis;\n- understand the impact of ABC analysis on work efficiency",
+                "Procedure": "1. Students realize a warehouse;\n2. They start a simulation and record the results. The ABC classification of the articles is deliberately false to allow them to improve it;\n3. Students use the result of the simulation to perform an ABC analysis;\n4. Students report the results of their analysis in the simulation, in the 'ABC Analysis' panel;\n5. A new simulation is started and the results are noted;\n6. The students and the teacher compare and discuss the results of the two simulations; If no improvement has been observed, students will test different set-ups and try to understand, with the help of the teacher, how to achieve the best result.",
+                "Controller": "Modify the ABC class of products",
+                "ControllerCaption": "Click on the ABC class of a product to change it."
+            },
             "alleyWidth": {
                 "Goals": "- know the main types of forklifts\n- understand the impact of the type of forklift on the layout and the work efficiency\n- understand the impact of the amount of forklifts on the work efficiency",
                 "Procedure": "1. The teacher defines the position of the docks and of the offices\n1. The teacher chooses the type of forklifts (if several groups do the activity in parallel, different types can be assigned to different groups)\n1. The students build a warehouse (using a fixed amount of shelves, or putting as many as possible to maximise the storage capacity)\n1. The students start a simulation and write down the result\n1. If only one Tinkeerlamp is used, another type of forklifts is chosen, the layout is adapted and a new simulation is run\n\nDiscussion: impact of the type of forklift on the layout and the efficiency\n\n- the counterbalanced forklift needs bigger alleys: the storage capacity is thus reduced\n- the counterbalanced forklift is faster: the work efficiency is thus higher\n- trade-off between storage-capacity and efficiency: what are the parameters that should be considered?",
@@ -152,6 +161,11 @@
                 "ConceptDoubleAlleysCaption": "Simple alley (left)\n\n- shelves accessible on both sides\n- it's possible to separate the picking from the restocking (e.g. ordre preparation on the left, restocking on the right)\n\nDouble alley (right)\n\n- Shelves accessible on one side only\n- higher storage capacity\n- slower work if several forklifts must pick/store goods at the same moment",
                 "ConceptTradeoff": "Concept: storage capacity vs efficiency",
                 "ConceptTradeoffCaption": "Storage capacity (left)\n\n- Allows to store more goods\n- Slower work: alleys are small, imply some waiting time if several forklifts work in the same alley at the same time\n- Simulation: 32s. per pallet\n\nWork efficiency (right)\n\n- Lower storage capacity\n- Large alleys, lots of space around the docks, almost no waiting time and fluid movements\n- Simulation: 25s. per pallet\n\nQuestions/discussion\n\n- Economical consequences (storage costs, salaries, ...)?\n- Which strategy is better? In which contexts?"
+            },
+
+            "pickingTime": {
+                "Goals": "- know the different types of occupations,\n- understand the influence of working conditions on the occupation types",
+                "Procedure":"1. Students perform a warehouse implementation and start a simulation;\n2. Students observe and take note of the different occupancy times, as well as the total simulation time;\n3. Students modify the working conditions according to the teacher's instructions, and start a new simulation;\n4. The results are compared and discussed by the whole class."
             },
 
             "surfaces": {

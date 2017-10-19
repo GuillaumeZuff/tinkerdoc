@@ -1,13 +1,8 @@
 template(name="docWidget_image")
     div.card.z-depth-2
+        +docCardTitleAndContent
         div.card-image
             +docCardDisplayImage
-            unless card.titleInCaption
-                +docCardTitle
-        unless card.titleInCaption
-            +docCardContent
-        else
-            +docCardTitleAndContent
 
 template(name="docWidget_imageLeft")
     div.card.z-depth-2

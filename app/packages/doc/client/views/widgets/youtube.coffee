@@ -1,7 +1,7 @@
 Template.docWidget_youtube.created = ->
     Lateral.youtube.player.load()
     @videoId = @data.card.videoId
-    @showPlayer = new ReactiveVar false
+    @showPlayer = new ReactiveVar true
 
 Template.docWidget_youtube.helpers
     checkId: ->
@@ -12,7 +12,7 @@ Template.docWidget_youtube.helpers
             Meteor.defer -> tmpl.showPlayer.set true
         undefined
     showPlayer: ->
-        Template.instance().showPlayer.get()
+        Lateral.youtube.player.isReady() and Template.instance().showPlayer.get()
 
 # player
 Template.docYoutubePlayer.created = ->
